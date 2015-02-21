@@ -38,7 +38,7 @@ sealed abstract class Expr {
     case _ => false
   }
 
-  def toIntermediate(): (List[InterInstr], VarOrLit) = this match {
+  def toIntermediate(): (List[IntermediateInstruction], VarOrLit) = this match {
     case Lit(n) => (Nil, VOLLit(n))
     case BinOp(op, e1, e2) => {
       val (lhsInstr, lhsVar) = e1.toIntermediate()
@@ -87,10 +87,10 @@ sealed abstract class Expr {
 }
 
 case class Lit(n: Int) extends Expr
-case class BinOp(op: BinOperator, e1: Expr, e2: Expr) extends Expr
+case class BinOp(op: BinaryOperator, e1: Expr, e2: Expr) extends Expr
 case class Var(name: String) extends Expr
 case class Load(exp: Expr) extends Expr
 case class FunctionCall(name: String, args: List[Expr]) extends Expr
-case class IfExpression(condition: BoolExpr, thenExpr: Expr, elseExpr: Expr) extends Expr
+case class IfExpression(condition: BooleanExpr, thenExpr: Expr, elseExpr: Expr) extends Expr
 case class StringLiteral(value: String) extends Expr
 case class PointerToName(name: String) extends Expr

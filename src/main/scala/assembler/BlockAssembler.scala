@@ -220,7 +220,7 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
     case VOLLit(num) => ()
   }
 
-  def currentLine() : InterInstr = block.code(position)
+  def currentLine() : IntermediateInstruction = block.code(position)
 
   def isPermanent(name: String): Boolean = (locals contains name) || (globals contains name)
 

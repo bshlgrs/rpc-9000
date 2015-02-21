@@ -8,9 +8,9 @@ import ast._
 
 
 object AssemblyMaker {
-  def separateIntoBlocks(instrs: List[InterInstr]): List[Block] = {
+  def separateIntoBlocks(instrs: List[IntermediateInstruction]): List[Block] = {
     var output = List[Block]()
-    var currentList = List[InterInstr]()
+    var currentList = List[IntermediateInstruction]()
     var labelName = "starting-block-" + Counter.getCounter().toString
 
     for(line <- instrs) {

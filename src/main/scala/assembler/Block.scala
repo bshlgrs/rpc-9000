@@ -1,11 +1,11 @@
 package assembler
 
-import ast.InterInstr
+import ast.IntermediateInstruction
 
 /**
  * Created by bshlegeris on 2/20/15.
  */
-class Block(val name: String, val code: List[InterInstr]) {
+class Block(val name: String, val code: List[IntermediateInstruction]) {
   override def toString(): String = {
     "Block " + name + "\n" + code.mkString("\n")
   }

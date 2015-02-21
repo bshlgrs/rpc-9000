@@ -1,6 +1,6 @@
 package ast
 
-sealed abstract class InterInstr {
+sealed abstract class IntermediateInstruction {
   override def toString: String = this match {
     case BinOpInter(op, in1, in2, target) => "\t"+target +"\t=  "+in1.toString + "  "+op.toString + "  "+in2.toString
     case LoadInter(source, target) => "\t "+target.toString + "\t= * "+source.toString
@@ -21,7 +21,7 @@ sealed abstract class InterInstr {
     case _ => throw new Exception("unimplemented")
   }
 
-  def changeTarget(oldTarget: String, newTarget: String):InterInstr = this match {
+  def changeTarget(oldTarget: String, newTarget: String):IntermediateInstruction = this match {
     case BinOpInter(op, in1, in2, target) => {
       if (target == oldTarget)
         BinOpInter(op, in1, in2, newTarget)
@@ -106,19 +106,19 @@ sealed abstract class InterInstr {
   }
 }
 
-case class BinOpInter(op: BinOperator, in1: VarOrLit, in2: VarOrLit, targetVar: String) extends InterInstr
-case class LoadInter(sourceVar: VarOrLit, targetVar: String) extends InterInstr
-case class StoreInter(sourceVar: VarOrLit, targetVar: VarOrLit) extends InterInstr
-case class CopyInter(sourceVar: VarOrLit, targetVar: String) extends InterInstr
-case class LabelInter(label: String) extends InterInstr
-case class JumpInter(label: String) extends InterInstr
-case class JumpZInter(label: String, sourceVar: VarOrLit) extends InterInstr
-case class JumpNInter(label: String, sourceVar: VarOrLit) extends InterInstr
-case class JumpNZInter(label: String, sourceVar: VarOrLit) extends InterInstr
-case class CallInter(name: String, args: List[VarOrLit], target:Option[String]) extends InterInstr
-case class AmpersandInter(name: String, target: String) extends InterInstr
-case object PushInter extends InterInstr
-case class PopInter(target: String) extends InterInstr
-case class CommentInter(comment: String) extends InterInstr
-case class ReturnWithValInter(value: VarOrLit) extends InterInstr
-case object ReturnVoidInter extends InterInstr
+case class BinOpInter(op: BinaryOperator, in1: VarOrLit, in2: VarOrLit, targetVar: String) extends IntermediateInstruction
+case class LoadInter(sourceVar: VarOrLit, targetVar: String) extends IntermediateInstruction
+case class StoreInter(sourceVar: VarOrLit, targetVar: VarOrLit) extends IntermediateInstruction
+case class CopyInter(sourceVar: VarOrLit, targetVar: String) extends IntermediateInstruction
+case class LabelInter(label: String) extends IntermediateInstruction
+case class JumpInter(label: String) extends IntermediateInstruction
+case class JumpZInter(label: String, sourceVar: VarOrLit) extends IntermediateInstruction
+case class JumpNInter(label: String, sourceVar: VarOrLit) extends IntermediateInstruction
+case class JumpNZInter(label: String, sourceVar: VarOrLit) extends IntermediateInstruction
+case class CallInter(name: String, args: List[VarOrLit], target:Option[String]) extends IntermediateInstruction
+case class AmpersandInter(name: String, target: String) extends IntermediateInstruction
+case object PushInter extends IntermediateInstruction
+case class PopInter(target: String) extends IntermediateInstruction
+case class CommentInter(comment: String) extends IntermediateInstruction
+case class ReturnWithValInter(value: VarOrLit) extends IntermediateInstruction
+case object ReturnVoidInter extends IntermediateInstruction

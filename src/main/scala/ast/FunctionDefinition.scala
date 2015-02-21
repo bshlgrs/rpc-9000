@@ -1,17 +1,15 @@
 package ast
 
 import assembler._
-/**
- * Created by bshlegeris on 2/20/15.
- */
-class Function(val name: String, params: List[String], val vars: Map[String, Integer],
+
+class FunctionDefinition(val name: String, params: List[String], val vars: Map[String, Integer],
                body: List[Statement]) {
-  override def toString() = ("def " + name + "(" + params.mkString(", ") +
-    ") (" + vars.mkString(", ") + ") {\n" + body.mkString("\n") + "\n}")
+  override def toString = "def " + name + "(" + params.mkString(", ") +
+    ") (" + vars.mkString(", ") + ") {\n" + body.mkString("\n") + "\n}"
 
   // Style question: should this be def or val?
-  def toIntermediate(): List[InterInstr] = {
-    var out = List[InterInstr]()
+  def toIntermediate: List[IntermediateInstruction] = {
+    var out = List[IntermediateInstruction]()
     for (line <- body) {
       out = out ::: line.toIntermediate
     }
@@ -46,7 +44,7 @@ class Function(val name: String, params: List[String], val vars: Map[String, Int
   }
 
   val localsMap: Map[String, Int] = {
-    var dict = collection.mutable.Map[String, Int]()
+    val dict = collection.mutable.Map[String, Int]()
 
     for ((x:String, i:Int) <- params.view.zipWithIndex) {
       dict(x) = i - params.length
@@ -68,7 +66,7 @@ class Function(val name: String, params: List[String], val vars: Map[String, Int
   }
 
   def toAssembly(globals: List[String]): List[Assembly] = {
-    val lol = (vars.values.toList.asInstanceOf[List[Int]]).sum
+    val lol = vars.values.toList.asInstanceOf[List[Int]].sum
     ASM_Label(name) +:
       (for (block <- blocks) yield { new
           BlockAssembler(block,
@@ -80,10 +78,10 @@ class Function(val name: String, params: List[String], val vars: Map[String, Int
   }
 
   def functionDependencies(): List[String] = {
-    for (CallInter(x, _, _) <- this.toIntermediate()) yield x
+    for (CallInter(x, _, _) <- this.toIntermediate) yield x
   }
 
-  def isProcedure(): Boolean = {
+  def isProcedure: Boolean = {
     functionDependencies().length == 0
   }
 }

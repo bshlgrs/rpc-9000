@@ -1,5 +1,5 @@
 package assembler
-import ast.BinOperator
+import ast.BinaryOperator
 
 /**
  * Created by bshlegeris on 2/20/15.
@@ -53,7 +53,7 @@ sealed abstract class Assembly {
   }
 }
 
-case class ASM_BinOp(op: BinOperator, r1: Register, r2: Register, out: Register)
+case class ASM_BinOp(op: BinaryOperator, r1: Register, r2: Register, out: Register)
   extends Assembly
 case class ASM_BPDLoad(source: Register, displacement: Int, target: Register)
   extends Assembly
