@@ -20,16 +20,14 @@ sealed abstract class Expr {
     case BinOp(_, l, r) => (this +: l.allExpressions) ::: r.allExpressions
     case Load(e) => this +: e.allExpressions
     case FunctionCall(_, args) => args.map{_.allExpressions}.flatten :+ this
-    case IfExpression(condition, thenExpr, elseExpr) => ( (this +:
+    case IfExpression(condition, thenExpr, elseExpr) => ( this +:
       condition.allExpressions) ::: thenExpr.allExpressions :::
-      elseExpr.allExpressions)
+      elseExpr.allExpressions
     case _ => List(this)
   }
 
   def strings: List[String] = {
-    for (StringLiteral(x) <- allExpressions) yield (
-      x
-      )
+    for (StringLiteral(x) <- allExpressions) yield x
   }
 
   val isPrimitive: Boolean = this match {
