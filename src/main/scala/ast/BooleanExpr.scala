@@ -1,9 +1,5 @@
 package ast
 
-/**
- * Created by bshlegeris on 2/20/15.
- */
-
 sealed abstract class BooleanExpr {
   override def toString: String = this match {
     case BooleanBinOp(op, e1, e2) => e1.toString + " " + op.toString + " " + e2.toString

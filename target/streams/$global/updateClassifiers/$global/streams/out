@@ -1,184 +1,358 @@
-[debug] :: resolving dependencies :: default#rpc-9000$sources_javadoc_2.11;1.0
-[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+[debug] :: resolving dependencies :: default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0
+[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, phantom-js-jetty]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6811b660
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3249b7a4
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.5
 [debug] 	found org.scala-lang#scala-library;2.11.5 in sbt-chain
 [debug] 	[2.11.5] org.scala-lang#scala-library;2.11.5
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->default(compile)]
+[info] Resolving org.scala-js#scalajs-library_2.11;0.6.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b1332eb
+[debug] sbt-chain: module revision found in cache: org.scala-js#scalajs-library_2.11;0.6.0
+[debug] 	found org.scala-js#scalajs-library_2.11;0.6.0 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [runtime]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [runtime]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->master]
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [test]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [runtime]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [test]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [runtime]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->master]
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [provided]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [provided]
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [optional]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [compile-internal]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [optional]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [provided]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [compile-internal]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [optional]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [provided]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile-internal->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile-internal->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile-internal->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile-internal->master]
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [runtime-internal]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [runtime]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [optional]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [runtime-internal]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [runtime]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [optional]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime-internal->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime-internal->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime-internal->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime-internal->master]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [test-internal]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [test]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [runtime]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->master]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [optional]
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [provided]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [test-internal]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [test]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [runtime]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [compile->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [runtime->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [runtime->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test->master]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [optional]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [provided]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [test-internal->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test-internal->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test-internal->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test-internal->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-library_2.11;0.6.0 [test-internal->master]
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [plugin]
-[debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [sources]
-[debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [docs]
-[debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [pom]
-[debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_2.11;1.0 [scala-tool]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->default(compile)]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->default(compile)]
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [plugin]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [plugin->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [plugin->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [plugin->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [plugin->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-compiler_2.11.5;0.6.0 [plugin->default(compile)]
+[info] Resolving org.scala-js#scalajs-compiler_2.11.5;0.6.0 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-js#scalajs-compiler_2.11.5;0.6.0 {plugin=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.scala-js#scalajs-compiler_2.11.5;0.6.0
+[debug] 	found org.scala-js#scalajs-compiler_2.11.5;0.6.0 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-compiler_2.11.5;0.6.0 [plugin->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-compiler_2.11.5;0.6.0 [plugin->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-js#scalajs-compiler_2.11.5;0.6.0 [plugin->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [plugin->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.11.5 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.5 {scala-tool=[default(compile)]}
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@274a91d8
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.5
 [debug] 	found org.scala-lang#scala-compiler;2.11.5 in sbt-chain
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [plugin->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [plugin->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [plugin->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [plugin->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.5 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.5 {scala-tool=[default(compile)]}
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c2e2815
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.5
 [debug] 	found org.scala-lang#scala-reflect;2.11.5 in sbt-chain
 [debug] 	[2.11.5] org.scala-lang#scala-reflect;2.11.5
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [plugin->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [plugin->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [plugin->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [plugin->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.3 {scala-tool=[default(compile)]}
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73245512
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [plugin->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [plugin->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [plugin->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [plugin->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 {scala-tool=[default(compile)]}
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fc8f7c5
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 in sbt-chain
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->master]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->jline#jline;2.12 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [plugin->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [plugin->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [plugin->master]
+[debug] resolving dependencies for configuration 'sources'
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [sources]
+[debug] resolving dependencies for configuration 'docs'
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [docs]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [scala-tool]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-library;2.11.5 [scala-tool->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-compiler;2.11.5 [scala-tool->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang#scala-reflect;2.11.5 [scala-tool->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.3 [scala-tool->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [scala-tool->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->jline#jline;2.12 [scala-tool->default(compile)]
 [info] Resolving jline#jline;2.12 ...
 [debug] sbt-chain: Checking cache for: dependency: jline#jline;2.12 {scala-tool=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: jline#jline;2.12
 [debug] 	found jline#jline;2.12 in sbt-chain
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->jline#jline;2.12 [scala-tool->runtime]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->jline#jline;2.12 [scala-tool->compile]
-[debug] == resolving dependencies default#rpc-9000$sources_javadoc_2.11;1.0->jline#jline;2.12 [scala-tool->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->jline#jline;2.12 [scala-tool->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->jline#jline;2.12 [scala-tool->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->jline#jline;2.12 [scala-tool->master]
+[debug] resolving dependencies for configuration 'phantom-js-jetty'
+[debug] == resolving dependencies for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 [phantom-js-jetty]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->default(compile)]
+[info] Resolving org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-websocket;8.1.16.v20140903
+[debug] 	found org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-websocket;8.1.16.v20140903 [phantom-js-jetty->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-util;8.1.16.v20140903 [phantom-js-jetty->default(compile)]
+[info] Resolving org.eclipse.jetty#jetty-util;8.1.16.v20140903 ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-util;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-util;8.1.16.v20140903
+[debug] 	found org.eclipse.jetty#jetty-util;8.1.16.v20140903 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-util;8.1.16.v20140903 [phantom-js-jetty->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-util;8.1.16.v20140903 [phantom-js-jetty->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-util;8.1.16.v20140903 [phantom-js-jetty->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-io;8.1.16.v20140903 [phantom-js-jetty->default(compile)]
+[info] Resolving org.eclipse.jetty#jetty-io;8.1.16.v20140903 ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-io;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-io;8.1.16.v20140903
+[debug] 	found org.eclipse.jetty#jetty-io;8.1.16.v20140903 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-io;8.1.16.v20140903 [phantom-js-jetty->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-io;8.1.16.v20140903 [phantom-js-jetty->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-io;8.1.16.v20140903 [phantom-js-jetty->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [phantom-js-jetty->default(compile)]
+[info] Resolving org.eclipse.jetty#jetty-http;8.1.16.v20140903 ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-http;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-http;8.1.16.v20140903
+[debug] 	found org.eclipse.jetty#jetty-http;8.1.16.v20140903 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [phantom-js-jetty->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [phantom-js-jetty->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [phantom-js-jetty->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->default(compile)]
+[info] Resolving org.eclipse.jetty#jetty-server;8.1.16.v20140903 ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-server;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-server;8.1.16.v20140903
+[debug] 	found org.eclipse.jetty#jetty-server;8.1.16.v20140903 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-server;8.1.16.v20140903 [phantom-js-jetty->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [phantom-js-jetty->default(compile)]
+[info] Resolving org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 {phantom-js-jetty=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
+[debug] 	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [phantom-js-jetty->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [phantom-js-jetty->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [phantom-js-jetty->master]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 [phantom-js-jetty->default(compile)]
+[info] Resolving org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 {phantom-js-jetty=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-continuation;8.1.16.v20140903
+[debug] 	found org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 in sbt-chain
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 [phantom-js-jetty->runtime]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 [phantom-js-jetty->compile]
+[debug] == resolving dependencies default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0->org.eclipse.jetty#jetty-continuation;8.1.16.v20140903 [phantom-js-jetty->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.5!scala-library.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.5!scala-library.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.5!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-library_2.11;0.6.0!scalajs-library_2.11.jar(doc)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-library_2.11;0.6.0!scalajs-library_2.11.jar
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-library_2.11;0.6.0!scalajs-library_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.11.5;0.6.0!scalajs-compiler_2.11.5.jar(doc)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.11.5;0.6.0!scalajs-compiler_2.11.5.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.5!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.5!scala-compiler.jar(doc)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.5!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.5!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.5!scala-reflect.jar(doc)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.5!scala-reflect.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar
 [debug] 	[NOT REQUIRED] jline#jline;2.12!jline.jar(doc)
 [debug] 	[NOT REQUIRED] jline#jline;2.12!jline.jar(src)
-[debug] :: resolution report :: resolve 42ms :: artifacts dl 8ms
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 compile produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-compile.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 runtime produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-runtime.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 test produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-test.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 provided produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-provided.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 optional produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-optional.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 compile-internal produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-compile-internal.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 runtime-internal produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-runtime-internal.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 test-internal produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-test-internal.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 plugin produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-plugin.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 sources produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-sources.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 docs produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-docs.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 pom produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-pom.xml
-[debug] 	report for default#rpc-9000$sources_javadoc_2.11;1.0 scala-tool produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_2.11-scala-tool.xml
-[debug] 	resolve done (42ms resolve - 8ms download)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar(doc)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar(doc)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar(doc)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar(doc)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar(doc)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(doc)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar(doc)
+[debug] :: resolution report :: resolve 93ms :: artifacts dl 16ms
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 compile produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-compile.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 runtime produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-runtime.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 test produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-test.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 provided produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-provided.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 optional produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-optional.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 compile-internal produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-compile-internal.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 runtime-internal produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-runtime-internal.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 test-internal produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-test-internal.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 plugin produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-plugin.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 sources produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-sources.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 docs produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-docs.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 pom produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-pom.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 scala-tool produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-scala-tool.xml
+[debug] 	report for default#rpc-9000$sources_javadoc_sjs0.6_2.11;1.0 phantom-js-jetty produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_javadoc_sjs0.6_2.11-phantom-js-jetty.xml
+[debug] 	resolve done (93ms resolve - 16ms download)

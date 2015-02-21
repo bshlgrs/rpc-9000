@@ -6,7 +6,7 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
                      val globals: List[String],
                      val returnPosition: Option[Int],
                      val localsSize: Int,
-                     val options: Map[String, Boolean]) {
+                     val options: Map[String, Boolean] = Map()) {
   def initialRegisterCondition() = {
     Array.fill[Option[VarOrLit]](8)(None)
   }
@@ -25,7 +25,7 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
     emit(ASM_Label(block.name))
 
     for((inter, index : Int) <- block.code.view.zipWithIndex) {
-      if (options["printInterInstrs"]) {
+      if (options("printInterInstrs")) {
         inter match {
           case CommentInter(_) => ()
           case LabelInter(_) => ()
@@ -257,7 +257,7 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
             case 1 => OneRegister
             case -1 => MOneRegister
             case _ => {
-              var register = getRegister()
+              val register = getRegister()
               emitLoad(vol, register)
               registers(register) = Some(vol)
               GPRegister(register)
