@@ -2,14 +2,11 @@ package assembler
 
 import ast._
 
-/**
- * Created by bshlegeris on 2/20/15.
- */
-
 class BlockAssembler(block: Block, locals: Map[String, Int],
                      val globals: List[String],
                      val returnPosition: Option[Int],
-                     val localsSize: Int) {
+                     val localsSize: Int,
+                     val options: Map[String, Boolean]) {
   def initialRegisterCondition() = {
     Array.fill[Option[VarOrLit]](8)(None)
   }
@@ -17,6 +14,8 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
   var synched = collection.mutable.Map[String, Boolean]()
   var code = List[Assembly]()
   var position = 0 : Int
+
+
 
   // This tells us the difference between the SP when the function was called
   // and its current value
@@ -26,11 +25,14 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
     emit(ASM_Label(block.name))
 
     for((inter, index : Int) <- block.code.view.zipWithIndex) {
-      // inter match {
-      //   case CommentInter(_) => ()
-      //   case LabelInter(_) => ()
-      //   case _ => emit(ASM_Comment("### "+inter.toString()))
-      // }
+      if (options["printInterInstrs"]) {
+        inter match {
+          case CommentInter(_) => ()
+          case LabelInter(_) => ()
+          case _ => emit(ASM_Comment("### " + inter.toString()))
+        }
+      }
+
 
       if (false) {
         println("Compiling "+inter)
@@ -228,17 +230,17 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
 
   def getInputRegister(vol: VarOrLit): Register = {
     if (registers contains Some(vol)) {
-      return GPRegister(registers indexOf Some(vol))
+      GPRegister(registers indexOf Some(vol))
     }
     else {
       vol match {
         case VOLVar(name) => {
           if (isPermanent(name)) {
-            var register = getRegister()
+            val register = getRegister()
             emitLoad(vol, register)
             registers(register) = Some(vol)
             synched(name) = true
-            return GPRegister(register)
+            GPRegister(register)
           } else {
             throw new Exception("You're referring to a temporary variable which isn't loaded."+
               " This is probably the compiler's fault, not yours.\n"+
@@ -258,7 +260,7 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
               var register = getRegister()
               emitLoad(vol, register)
               registers(register) = Some(vol)
-              return GPRegister(register)
+              GPRegister(register)
             }
           }
 
@@ -270,9 +272,9 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
   def getOutputRegister(name: String): Register = {
     synched(name) = false
     if (registers contains Some(VOLVar(name))) {
-      return GPRegister(registers indexOf Some(VOLVar(name)))
+      GPRegister(registers indexOf Some(VOLVar(name)))
     } else {
-      var register = getRegister()
+      val register = getRegister()
       registers(register) = Some(VOLVar(name))
 
       // Requesting a place to save a new value to a register means that it's about
@@ -373,21 +375,21 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
       // This is a shitty temporary solution which will sometimes break everything!
       case VOLLit(x) => false //currentLine().inputVars contains vol
       case VOLVar(name) => {
-        if (block.code(position).inputVars contains(VOLVar(name)))
+        if (block.code(position).inputVars.contains(VOLVar(name)))
           return false
 
         for(line <- block.code.drop(position + 1)) {
-          if (line.inputVars contains VOLVar(name))
+          if (line.inputVars.contains(VOLVar(name)))
             return false
-          else if (line.outputVars contains name)
+          else if (line.outputVars.contains(name))
             return true
         }
-        return true
+        true
       }
     }
   }
 
-  def saveUnsynchedVariables() = {
+  def saveUnsynchedVariables(): Unit = {
     for ((optionVol, index) <- registers.view.zipWithIndex) optionVol match {
       case Some(VOLVar(name)) => {
         if (isPermanent(name) && !synched(name)) {

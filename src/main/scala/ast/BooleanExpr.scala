@@ -25,28 +25,28 @@ sealed abstract class BooleanExpr {
 case class BooleanBinOp(op: BoolBinOperator, lhs: Expr, rhs: Expr) extends BooleanExpr {
   override def toIntermediate(thenLabel: String, elseLabel: String): List[IntermediateInstruction] = {
     op match {
-      case GreaterOrEqual => return (
-        BooleanBinOp(GreaterThan, BinOp(AddOp, Lit(1), lhs), rhs)
-          .toIntermediate(thenLabel, elseLabel)
-        )
-      case _ => ()
+      case GreaterOrEqual => {
+        BooleanBinOp(GreaterThan, BinOp(AddOp, Lit(1), lhs), rhs).toIntermediate(thenLabel, elseLabel)
+      }
+      case _ => {
+        val (lhsCode, lhsResult) = lhs.toIntermediate()
+        val (rhsCode, rhsResult) = rhs.toIntermediate()
+        val outputVar = Counter.getTempVarName()
+
+        val comparisonInstrs: List[IntermediateInstruction] = op match {
+          case Equals => List(BinOpInter(SubOp, lhsResult, rhsResult, outputVar),
+            JumpNZInter(elseLabel, VOLVar(outputVar)),
+            JumpInter(thenLabel))
+
+          case GreaterThan => List(BinOpInter(SubOp, rhsResult, lhsResult, outputVar),
+            JumpNInter(thenLabel, VOLVar(outputVar)),
+            JumpInter(elseLabel))
+          case GreaterOrEqual => throw new Exception("something is hideously wrong")
+        }
+
+        lhsCode ::: rhsCode ::: comparisonInstrs
+      }
     }
-    val (lhsCode, lhsResult) = lhs.toIntermediate()
-    val (rhsCode, rhsResult) = rhs.toIntermediate()
-    val outputVar = Counter.getTempVarName()
-
-    val comparisonInstrs: List[IntermediateInstruction] = op match {
-      case Equals => List(BinOpInter(SubOp, lhsResult, rhsResult, outputVar),
-        JumpNZInter(elseLabel, VOLVar(outputVar)),
-        JumpInter(thenLabel))
-
-      case GreaterThan => List(BinOpInter(SubOp, rhsResult, lhsResult, outputVar),
-        JumpNInter(thenLabel, VOLVar(outputVar)),
-        JumpInter(elseLabel))
-      case GreaterOrEqual => throw new Exception("something is hideously wrong")
-    }
-
-    (lhsCode ::: rhsCode ::: comparisonInstrs)
   }
 }
 
@@ -55,7 +55,7 @@ case class AndExpr(lhs: BooleanExpr, rhs: BooleanExpr) extends BooleanExpr {
     val myLabel = "and-"+Counter.counter
     val lhsCode = lhs.toIntermediate(myLabel, elseLabel)
     val rhsCode = rhs.toIntermediate(thenLabel, elseLabel)
-    return (lhsCode ::: LabelInter(myLabel) +: rhsCode)
+    lhsCode ::: LabelInter(myLabel) +: rhsCode
   }
 }
 
@@ -64,7 +64,7 @@ case class OrExpr(lhs: BooleanExpr, rhs: BooleanExpr) extends BooleanExpr {
     val myLabel = "and-"+Counter.counter
     val lhsCode = lhs.toIntermediate(thenLabel, myLabel)
     val rhsCode = rhs.toIntermediate(thenLabel, elseLabel)
-    return (lhsCode ::: LabelInter(myLabel) +: rhsCode)
+    lhsCode ::: LabelInter(myLabel) +: rhsCode
   }
 }
 
