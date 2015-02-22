@@ -1,8 +1,8 @@
 package ast
 
-/**
- * Created by bshlegeris on 2/20/15.
- */
+import scala.scalajs.js.annotation.JSExport
+
+@JSExport
 sealed abstract class BinaryOperator {
   override def toString: String = this match {
     case AddOp => "+"
@@ -21,8 +21,13 @@ sealed abstract class BinaryOperator {
   }
 }
 
+@JSExport
 case object AddOp extends BinaryOperator
+@JSExport
 case object MulOp extends BinaryOperator
+@JSExport
 case object SubOp extends BinaryOperator
+@JSExport
 case object DivOp extends BinaryOperator
+@JSExport
 case object ModOp extends BinaryOperator

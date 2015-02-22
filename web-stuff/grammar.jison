@@ -15,6 +15,12 @@
 ")"                   return ')'
 "="                   return '='
 ";"                   return ';'
+"int"                 return 'INT'
+"void"                return 'VOID'
+"return"                return 'RETURN'
+"{"                   return '{'
+"}"                   return '}'
+","                   return ','
 <<EOF>>               return 'EOF'
 [a-zA-Z_]+            return 'NAME'
 .                     return 'INVALID'
@@ -33,30 +39,63 @@
 %% /* language grammar */
 
 program
-    : stat EOF
+    : function EOF
         {return $1;}
+    ;
+
+function
+    : INT NAME '(' listOfArgs '{' body '}'
+        {$$ = ["FunctionDef", $2, $4, $6];}
+    ;
+
+listOfArgs
+    : arg ')'
+        {$$ = [$1];}
+    | arg ',' listOfArgs
+        {$$ = [$1].concat($3);}
+    ;
+
+body
+    : stat body
+        {$$ = [$1].concat($2);}
+    | stat
+        {$$ = [$1];}
+    ;
+
+arg
+    : type NAME
+        {$$ = [$1, $2];}
+    ;
+
+type
+    : INT
+        {$$ = ["Int"];}
     ;
 
 stat
     : NAME '=' expr ';'
-        {return ["Assignment", $1, $3];}
+        {$$ = {type: "Assignment", name: $1, rhs: $3};}
+    | RETURN ';'
+        {$$ = ["Return"];}
+    | RETURN expr ';'
+        {$$ = ["Return", $2];}
     ;
 
 expr
     : expr '+' expr
-        {$$ = ["BinOp", "+", $1, $3];}
+        {$$ = {type: "BinOp", op: "+", lhs: $1, rhs: $3};}
     | expr '-' expr
-        {$$ = ["BinOp", "-", $1, $3];}
+        {$$ = {type: "BinOp", op: "-", lhs: $1, rhs: $3};}
     | expr '*' expr
-        {$$ = ["BinOp", "*", $1, $3];;}
+        {$$ = {type: "BinOp", op: "*", lhs: $1, rhs: $3};;}
     | expr '/' expr
-        {$$ = ["BinOp", "/", $1, $3];}
+        {$$ = {type: "BinOp", op: "/", lhs: $1, rhs: $3};}
     | '-' expr %prec UMINUS
-        {$$ = ["BinOp", "-", ["IntLit", 0], $3];}
+        {$$ = {type: "BinOp", op: "-", lhs: ["IntLit", 0], rhs: $3};}
     | '(' expr ')'
         {$$ = $2;}
     | NAME
-        {$$ = ["Var", $1];}
+        {$$ = {type: "Var", name: $1];}
     | NUMBER
-        {$$ = ["IntLit", Number(yytext)];}
+        {$$ = {type: "Lit", value: Number(yytext)];}
     ;

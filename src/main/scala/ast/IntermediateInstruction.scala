@@ -1,6 +1,9 @@
 package ast
 
+import scala.scalajs.js.annotation.JSExport
+
 sealed abstract class IntermediateInstruction {
+  @JSExport
   override def toString: String = this match {
     case BinOpInter(op, in1, in2, target) => "\t"+target +"\t=  "+in1.toString + "  "+op.toString + "  "+in2.toString
     case LoadInter(source, target) => "\t "+target.toString + "\t= * "+source.toString

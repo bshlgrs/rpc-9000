@@ -1,8 +1,11 @@
 package ast
 
+import scala.scalajs.js.annotation.JSExport
+
 /**
  * Created by bshlegeris on 2/20/15.
  */
+@JSExport
 sealed abstract class Expr {
   override def toString: String = this match {
     case Lit(n) => n.toString
@@ -38,6 +41,7 @@ sealed abstract class Expr {
     case _ => false
   }
 
+  @JSExport
   def toIntermediate(): (List[IntermediateInstruction], VarOrLit) = this match {
     case Lit(n) => (Nil, VOLLit(n))
     case BinOp(op, e1, e2) => {
@@ -85,6 +89,7 @@ sealed abstract class Expr {
     }
   }
 }
+
 
 case class Lit(n: Int) extends Expr
 case class BinOp(op: BinaryOperator, e1: Expr, e2: Expr) extends Expr

@@ -1,7 +1,10 @@
 package ast
 
+import scala.scalajs.js.annotation.JSExport
+
 import assembler._
 
+@JSExport
 class FunctionDefinition(val name: String, params: List[String], val vars: Map[String, Integer],
                body: List[Statement]) {
   override def toString = "def " + name + "(" + params.mkString(", ") +

@@ -2,104 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d48d2ddd-a27f-4b8c-9e89-fb730ce0d866" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SBT__org_scala_js_scalajs_library_2_11_0_6_0_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-stuff/grammar.jison" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-stuff/index-dev.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$85b31c123b8b9fdfaf1f$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$85b31c123b8b9fdfaf1f$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$85b31c123b8b9fdfaf1f.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$85b31c123b8b9fdfaf1f.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$d3af475c83d7b61db42a$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$d3af475c83d7b61db42a$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$d3af475c83d7b61db42a.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$d3af475c83d7b61db42a.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f4ddfd90e53f8a120acc$$anonfun$$sbtdef$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f4ddfd90e53f8a120acc$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f4ddfd90e53f8a120acc.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$f4ddfd90e53f8a120acc.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/webapp/Utils.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-stuff/parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-stuff/utils.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4979236175f74bdf5de6$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4979236175f74bdf5de6$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4979236175f74bdf5de6.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$4979236175f74bdf5de6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fdba6ca9fcec9454c480$$anonfun$$sbtdef$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fdba6ca9fcec9454c480$.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fdba6ca9fcec9454c480.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$fdba6ca9fcec9454c480.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$$anonfun$11.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AddOp$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AddOp$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AddOp$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AddOp$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AddOp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AddOp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr$.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2$$anonfun$apply$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$assemble$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$getRegister$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$initialRegisterCondition$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$initialRegisterCondition$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$isUnneeded$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$isUnneeded$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$saveUnsynchedVariables$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$saveUnsynchedVariables$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$saveUnsynchedVariables$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler$$anonfun$saveUnsynchedVariables$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/assembler/BlockAssembler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/AndExpr.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$$anonfun$10.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$$anonfun$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$$anonfun$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ArrayAssignment.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Assignment.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinOp.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinaryOperator.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinaryOperator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinaryOperator.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BinaryOperator.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BoolBinOperator.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BoolBinOperator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BoolBinOperator.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BoolBinOperator.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp$.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanBinOp.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanExpr.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanExpr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanExpr.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/BooleanExpr.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/DivOp$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/DivOp$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/DivOp$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/DivOp$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/DivOp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/DivOp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Equals$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Equals$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Equals$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Equals$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Equals.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Equals.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$allExpressions$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$allExpressions$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$strings$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$strings$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$strings$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr$$anonfun$strings$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Expr.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ForLoop.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionCall.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$10.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$11.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$9.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$allVars$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$allVars$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$functionDependencies$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$functionDependencies$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$functionDependencies$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$functionDependencies$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$isLocal$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$isLocal$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$isLocal$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$isLocal$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$toAssembly$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$toAssembly$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$toIntermediate$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition$$anonfun$toIntermediate$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/FunctionDefinition.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterOrEqual$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterOrEqual$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterOrEqual$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterOrEqual$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterOrEqual.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterOrEqual.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterThan$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterThan$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterThan$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterThan$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterThan.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/GreaterThan.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfElse.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IfExpression.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/IndirectAssignment.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Lit.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Load.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ModOp$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ModOp$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ModOp$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ModOp$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ModOp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/ModOp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/MulOp$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/MulOp$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/MulOp$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/MulOp$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/MulOp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/MulOp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr$.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/NotExpr.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr$.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/input_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/input_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.11/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" afterPath="$PROJECT_DIR$/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.10/output_dsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/OrExpr.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/PointerToName.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Return.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$allExpressions$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$allExpressions$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$allExpressions$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$allExpressions$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$allExpressions$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement$$anonfun$allExpressions$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Statement.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StatementHelper$$anonfun$statementsToIntermediate$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StatementHelper$$anonfun$statementsToIntermediate$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StatementHelper$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StatementHelper$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StatementHelper$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StatementHelper$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/StringLiteral.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/SubOp$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/SubOp$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/SubOp$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/SubOp$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/SubOp.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/SubOp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/Var.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$4.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$5.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$6.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$7.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$8.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$$anonfun$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/VoidFunctionCall.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/webapp/WebInterface$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/webapp/WebInterface$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/webapp/WebInterface$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/webapp/WebInterface$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/webapp/WebInterface.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/webapp/WebInterface.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While$.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While$.sjsir" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While.sjsir" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/ast/While.sjsir" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/assembler/BlockAssembler.scala" afterPath="$PROJECT_DIR$/src/main/scala/assembler/BlockAssembler.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/.history" afterPath="$PROJECT_DIR$/target/.history" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ast/BinaryOperator.scala" afterPath="$PROJECT_DIR$/src/main/scala/ast/BinaryOperator.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ast/BooleanExpr.scala" afterPath="$PROJECT_DIR$/src/main/scala/ast/BooleanExpr.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-rpc-9000-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ast/Expr.scala" afterPath="$PROJECT_DIR$/src/main/scala/ast/Expr.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala" afterPath="$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ast/IntermediateInstruction.scala" afterPath="$PROJECT_DIR$/src/main/scala/ast/IntermediateInstruction.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ast/Statement.scala" afterPath="$PROJECT_DIR$/src/main/scala/ast/Statement.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala" afterPath="$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/fastopt-js" afterPath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/fastopt-js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-stuff/grammar.jison" afterPath="$PROJECT_DIR$/web-stuff/grammar.jison" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-stuff/index-dev.html" afterPath="$PROJECT_DIR$/web-stuff/index-dev.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins.sbt" afterPath="$PROJECT_DIR$/project/plugins.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/rpc-9000-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/rpc-9000-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/rpc-9000-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/rpc-9000-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/rpc-9000-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/rpc-9000-build.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/rpc-9000.iml" afterPath="$PROJECT_DIR$/.idea/modules/rpc-9000.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/fastOptJS/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/rpc-9000-fastopt.js.map" afterPath="$PROJECT_DIR$/target/scala-2.11/rpc-9000-fastopt.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/rpc-9000-fastopt.js" afterPath="$PROJECT_DIR$/target/scala-2.11/rpc-9000-fastopt.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rpc-9000.iws" />
@@ -128,53 +223,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index-dev.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-stuff/index-dev.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="357">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebInterface.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebInterface.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.82474226" vertical-offset="295" max-vertical-offset="1309">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               <folding>
-                <element signature="e#61#90#0" expanded="true" />
+                <element signature="e#62#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grammar.jison" pinned="false" current-in-tab="true">
+      <file leaf-file-name="grammar.jison" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-stuff/grammar.jison">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.693299" vertical-offset="363" max-vertical-offset="1156">
-              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Compiler.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/compiler/Compiler.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="9" column="52" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FunctionDefinition.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1581">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="992" max-vertical-offset="1819">
+              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -188,27 +253,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/ast/Statement.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ast/Counter.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ast/VarOrLit.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ast/Expr.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/compiler/StandardLibrary.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/assembler/Assembly.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/assembler/Block.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/assembler/AssemblyMaker.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ast/BinOperator.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ast/BinaryOperator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ast/BoolExpr.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ast/Function.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ast/InterInstr.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ast/IntermediateInstruction.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/compiler/Compiler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ast/BooleanExpr.scala" />
         <option value="$PROJECT_DIR$/project/plugins.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/assembler/BlockAssembler.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/web-stuff/parser.js" />
+        <option value="$PROJECT_DIR$/src/main/scala/ast/BinaryOperator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ast/BooleanExpr.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ast/Statement.scala" />
         <option value="$PROJECT_DIR$/web-stuff/index-dev.html" />
+        <option value="$PROJECT_DIR$/web-stuff/utils.js" />
+        <option value="$PROJECT_DIR$/src/main/scala/webapp/Utils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ast/IntermediateInstruction.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ast/Expr.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala" />
         <option value="$PROJECT_DIR$/web-stuff/grammar.jison" />
       </list>
@@ -241,7 +309,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,10 +405,204 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Statement.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntermediateInstruction.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Expr.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooleanExpr.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rpc-9000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,7 +639,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="rpc-9000" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -551,22 +819,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <extension name="scalaCoverage" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -585,6 +837,22 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -648,9 +916,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.24452555" sideWeight="0.27458617" order="12" side_tool="true" content_ui="tabs" x="2664" y="30" width="1282" height="843" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5123095" sideWeight="0.3673611" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11484375" sideWeight="0.07439613" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -658,31 +928,29 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21816881" sideWeight="0.7254138" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18532339" sideWeight="0.6326389" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14614774" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18532339" sideWeight="0.6326389" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25947523" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.24452555" sideWeight="0.27458617" order="12" side_tool="true" content_ui="tabs" x="2664" y="30" width="1282" height="843" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22544643" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5123095" sideWeight="0.3673611" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14614774" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21816881" sideWeight="0.7254138" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18532339" sideWeight="0.6326389" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -694,8 +962,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22544643" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -724,11 +992,62 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web-stuff/index-dev.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="340">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#62#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-stuff/grammar.jison">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="1819">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-stuff/parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6732">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/compiler/Compiler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="306">
+          <caret line="9" column="52" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1581">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/compiler/StandardLibrary.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="3519">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1394">
           <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="374">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +1100,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1581">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#13#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -796,20 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/Statement.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="3094">
-          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/Counter.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ast/VarOrLit.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
@@ -817,18 +1121,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/Expr.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/compiler/StandardLibrary.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3519">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
           <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,23 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/IntermediateInstruction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="841" max-vertical-offset="1581">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21907216" vertical-offset="0" max-vertical-offset="776">
           <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +1160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25515464" vertical-offset="58214" max-vertical-offset="58990">
           <caret line="3436" column="3" selection-start-line="3436" selection-start-column="3" selection-end-line="3436" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,31 +1167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.043814432" vertical-offset="0" max-vertical-offset="776">
           <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/BooleanExpr.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.40206185" vertical-offset="329" max-vertical-offset="1479">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/BinaryOperator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10953608" vertical-offset="0" max-vertical-offset="776">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web-stuff/index-dev.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="357">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19716495" vertical-offset="0" max-vertical-offset="6953">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,21 +1193,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/Counter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/FunctionDefinition.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1632">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
-            <element signature="e#61#90#0" expanded="true" />
+            <element signature="e#13#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-library_2.11/srcs/scalajs-library_2.11-0.6.0-sources.jar!/scala/scalajs/js/ArrayOps.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3210084" vertical-offset="327" max-vertical-offset="1972">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-js/scalajs-library_2.11/srcs/scalajs-library_2.11-0.6.0-sources.jar!/scala/scalajs/js/Array.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9142857" vertical-offset="0" max-vertical-offset="2941">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-stuff/index-dev.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="357">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/webapp/Utils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/BooleanExpr.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="890" max-vertical-offset="1666">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/Expr.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1043" max-vertical-offset="1819">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/IntermediateInstruction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-stuff/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.021907216" vertical-offset="0" max-vertical-offset="776">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/BinaryOperator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15335052" vertical-offset="0" max-vertical-offset="776">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="21" />
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="21" />
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="21" />
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="21" />
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-stuff/parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5954" max-vertical-offset="6732">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ast/Statement.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33247423" vertical-offset="1799" max-vertical-offset="3281">
+          <caret line="121" column="11" selection-start-line="121" selection-start-column="11" selection-end-line="121" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-stuff/grammar.jison">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.693299" vertical-offset="363" max-vertical-offset="1156">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="992" max-vertical-offset="1819">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/webapp/WebInterface.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82474226" vertical-offset="295" max-vertical-offset="1309">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding>
+            <element signature="e#62#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

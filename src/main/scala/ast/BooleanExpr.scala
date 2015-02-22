@@ -1,5 +1,8 @@
 package ast
 
+import scala.scalajs.js.annotation.JSExport
+
+@JSExport
 sealed abstract class BooleanExpr {
   override def toString: String = this match {
     case BooleanBinOp(op, e1, e2) => e1.toString + " " + op.toString + " " + e2.toString
@@ -18,6 +21,7 @@ sealed abstract class BooleanExpr {
   }
 }
 
+@JSExport
 case class BooleanBinOp(op: BoolBinOperator, lhs: Expr, rhs: Expr) extends BooleanExpr {
   override def toIntermediate(thenLabel: String, elseLabel: String): List[IntermediateInstruction] = {
     op match {
@@ -46,6 +50,7 @@ case class BooleanBinOp(op: BoolBinOperator, lhs: Expr, rhs: Expr) extends Boole
   }
 }
 
+@JSExport
 case class AndExpr(lhs: BooleanExpr, rhs: BooleanExpr) extends BooleanExpr {
   override def toIntermediate(thenLabel: String, elseLabel: String): List[IntermediateInstruction] = {
     val myLabel = "and-"+Counter.counter
@@ -55,6 +60,7 @@ case class AndExpr(lhs: BooleanExpr, rhs: BooleanExpr) extends BooleanExpr {
   }
 }
 
+@JSExport
 case class OrExpr(lhs: BooleanExpr, rhs: BooleanExpr) extends BooleanExpr {
   override def toIntermediate(thenLabel: String, elseLabel: String): List[IntermediateInstruction] = {
     val myLabel = "and-"+Counter.counter
@@ -64,10 +70,12 @@ case class OrExpr(lhs: BooleanExpr, rhs: BooleanExpr) extends BooleanExpr {
   }
 }
 
+@JSExport
 case class NotExpr(expr: BooleanExpr) extends BooleanExpr {
   override def toIntermediate(thenLabel: String, elseLabel: String) = expr.toIntermediate(elseLabel, thenLabel)
 }
 
+@JSExport
 sealed abstract class BoolBinOperator {
   override def toString: String = this match {
     case Equals => "=="
@@ -76,6 +84,9 @@ sealed abstract class BoolBinOperator {
   }
 }
 
+@JSExport
 case object Equals extends BoolBinOperator
+@JSExport
 case object GreaterThan extends BoolBinOperator
+@JSExport
 case object GreaterOrEqual extends BoolBinOperator
