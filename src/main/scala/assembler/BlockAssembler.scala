@@ -45,32 +45,32 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
 
       inter match {
         case BinOpInter(op, in1, in2, out) => {
-          var r1 = getInputRegister(in1)
-          var r2 = getInputRegister(in2)
+          val r1 = getInputRegister(in1)
+          val r2 = getInputRegister(in2)
 
-          var r3 = getOutputRegister(out)
+          val r3 = getOutputRegister(out)
           emit(ASM_BinOp(op, r1, r2, r3))
         }
         // target = *source
         case LoadInter(source, target) => {
-          var r1 = getInputRegister(source)
-          var r2 = getOutputRegister(target)
+          val r1 = getInputRegister(source)
+          val r2 = getOutputRegister(target)
           emit(ASM_Load(r1, r2))
         }
         case StoreInter(source, target) => {
-          var r1 = getInputRegister(source)
-          var r2 = getInputRegister(target)
+          val r1 = getInputRegister(source)
+          val r2 = getInputRegister(target)
           emit(ASM_Store(r1, r2))
         }
         case CopyInter(source, target) => {
           source match {
             case VOLLit(n) => {
-              var r2 = getOutputRegister(target)
+              val r2 = getOutputRegister(target)
               emit(ASM_LoadIm(n, r2))
             }
             case VOLVar(n) => {
-              var r1 = getInputRegister(source)
-              var r2 = getOutputRegister(target)
+              val r1 = getInputRegister(source)
+              val r2 = getOutputRegister(target)
               // the next line is very unrealistic for a real microprocessor, but yolo.
               //         (mainly because I cbf implementing the copy instruction)
               emit(ASM_BinOp(AddOp, ZeroRegister, r1, r2))
@@ -87,29 +87,29 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
 
           // todo: static checks to determine if this is constant 0.
           // Maybe I should do that in the AST -> Intermediate conversion instead...
-          var r1 = getInputRegister(variable)
+          val r1 = getInputRegister(variable)
           emit(ASM_JumpZ(r1, label))
 
         }
         case JumpNZInter(label, variable) => {
           saveUnsynchedVariables()
-          var r1 = getInputRegister(variable)
+          val r1 = getInputRegister(variable)
           emit(ASM_JumpNZ(r1, label))
         }
         case JumpNInter(label, variable) => {
           saveUnsynchedVariables()
-          var r1 = getInputRegister(variable)
+          val r1 = getInputRegister(variable)
           emit(ASM_JumpN(r1, label))
         }
         case AmpersandInter(name, target) => {
           if (locals contains name) {
-            var r1 = getInputRegister(VOLLit(locals(name)))
-            var out = getOutputRegister(target)
+            val r1 = getInputRegister(VOLLit(locals(name)))
+            val out = getOutputRegister(target)
 
             emit(ASM_BinOp(AddOp, r1, StackPointer, out))
             emit(ASM_Load(out, out))
           } else {
-            var out = getOutputRegister(target)
+            val out = getOutputRegister(target)
             emit(ASM_LoadGlobal("#"+name, out))
           }
         }

@@ -49,6 +49,19 @@ object WebInterface extends JSApp {
     }
   }
 
+  def wrapBooleanExpr(ast: js.Dictionary[Any]): BooleanExpr = {
+    def getStr(name: String) = ast(name).asInstanceOf[String]
+    def get(name: String) = ast(name).asInstanceOf[js.Dictionary[Any]]
+    def getList(name: String) = ast(name).asInstanceOf[js.Array[js.Dictionary[Any]]]
+
+    ast("type") match {
+      case "BooleanBinOp" => BooleanBinOp(
+        wrapBooleanBinOperator(getStr("op")),
+        wrapExpr(get("lhs")),
+        wrapExpr(get("rhs")))
+    }
+  }
+
   def wrapStatement(ast: js.Dictionary[Any]): Statement = {
     def getStr(name: String) = ast(name).asInstanceOf[String]
     def get(name: String) = ast(name).asInstanceOf[js.Dictionary[Any]]
@@ -61,7 +74,17 @@ object WebInterface extends JSApp {
       } else {
         Return(None)
       }
-      case _ => ???
+      case "IfElse" => {
+        IfElse(wrapBooleanExpr(get("condition")), mapWrap(wrapStatement, getList("thenBlock")),
+          if (ast.contains("elseBlock"))
+            mapWrap(wrapStatement, getList("elseBlock"))
+          else
+            Nil)
+      }
+      case _ => {
+        println(s"that statement can't be parsed yet: ${JSON.stringify(ast)}")
+        ???
+      }
     }
   }
 
@@ -71,6 +94,12 @@ object WebInterface extends JSApp {
     case "-" => SubOp
     case "/" => DivOp
     case "%" => ModOp
+  }
+
+  def wrapBooleanBinOperator(op: String): BoolBinOperator = op match {
+    case "==" => Equals
+    case ">" => GreaterThan
+    case ">=" => GreaterOrEqual
   }
 
   @JSExport

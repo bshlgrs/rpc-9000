@@ -8945,9 +8945,9 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapBinOperator__T__Last_BinaryOperato
 ScalaJS.c.Lwebapp_WebInterface$.prototype.$$js$exported$meth$compile__Last_Expr__O = (function(expr) {
   return expr.toString__T()
 });
-ScalaJS.c.Lwebapp_WebInterface$.prototype.getList$3__p1__T__sjs_js_Dictionary__sjs_js_Array = (function(name, ast$1) {
-  if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$1, name))) {
-    return ast$1[name]
+ScalaJS.c.Lwebapp_WebInterface$.prototype.getList$3__p1__T__sjs_js_Dictionary__sjs_js_Array = (function(name, ast$4) {
+  if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$4, name))) {
+    return ast$4[name]
   } else {
     throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + name))
   }
@@ -8977,6 +8977,13 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.handleClick__O__V = (function(x) {
   var text = jsx$3.s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.s.sc_TraversableOnce$class__mkString__sc_TraversableOnce__T__T__T__T(this$3, "", "\n", "")]));
   (0, ScalaJS.g["jQuery"])("#assembly-output")["html"](text)
 });
+ScalaJS.c.Lwebapp_WebInterface$.prototype.getList$4__p1__T__sjs_js_Dictionary__sjs_js_Array = (function(name, ast$1) {
+  if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$1, name))) {
+    return ast$1[name]
+  } else {
+    throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + name))
+  }
+});
 ScalaJS.c.Lwebapp_WebInterface$.prototype.getStr$2__p1__T__sjs_js_Dictionary__T = (function(name, ast$3) {
   if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$3, name))) {
     var jsx$1 = ast$3[name]
@@ -8985,9 +8992,6 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.getStr$2__p1__T__sjs_js_Dictionary__T 
     throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + name))
   };
   return ScalaJS.as.T(jsx$1)
-});
-ScalaJS.c.Lwebapp_WebInterface$.prototype.$$js$exported$meth$wrapFunctionDef__sjs_js_Dictionary__O = (function(ast) {
-  return this.wrapFunctionDef__sjs_js_Dictionary__Last_FunctionDefinition(ast)
 });
 ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapExpr__sjs_js_Dictionary__Last_Expr = (function(ast) {
   if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast, "type"))) {
@@ -9066,7 +9070,31 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapExpr__sjs_js_Dictionary__Last_Expr
     throw new ScalaJS.c.s_MatchError().init___O(x1)
   }
 });
-ScalaJS.c.Lwebapp_WebInterface$.prototype.getStr$3__p1__T__sjs_js_Dictionary__T = (function(name, ast$1) {
+ScalaJS.c.Lwebapp_WebInterface$.prototype.$$js$exported$meth$wrapFunctionDef__sjs_js_Dictionary__O = (function(ast) {
+  return this.wrapFunctionDef__sjs_js_Dictionary__Last_FunctionDefinition(ast)
+});
+ScalaJS.c.Lwebapp_WebInterface$.prototype.getStr$3__p1__T__sjs_js_Dictionary__T = (function(name, ast$4) {
+  if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$4, name))) {
+    var jsx$1 = ast$4[name]
+  } else {
+    var jsx$1;
+    throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + name))
+  };
+  return ScalaJS.as.T(jsx$1)
+});
+ScalaJS.c.Lwebapp_WebInterface$.prototype.get$3__p1__T__sjs_js_Dictionary__sjs_js_Dictionary = (function(name, ast$4) {
+  if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$4, name))) {
+    return ast$4[name]
+  } else {
+    throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + name))
+  }
+});
+ScalaJS.c.Lwebapp_WebInterface$.prototype.main__V = (function() {
+  (0, ScalaJS.g["jQuery"])("#compile-button")["on"]("click", (function(x$2) {
+    ScalaJS.m.Lwebapp_WebInterface$().handleClick__O__V(x$2)
+  }))
+});
+ScalaJS.c.Lwebapp_WebInterface$.prototype.getStr$4__p1__T__sjs_js_Dictionary__T = (function(name, ast$1) {
   if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$1, name))) {
     var jsx$1 = ast$1[name]
   } else {
@@ -9075,19 +9103,38 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.getStr$3__p1__T__sjs_js_Dictionary__T 
   };
   return ScalaJS.as.T(jsx$1)
 });
-ScalaJS.c.Lwebapp_WebInterface$.prototype.main__V = (function() {
-  (0, ScalaJS.g["jQuery"])("#compile-button")["on"]("click", (function(x$2) {
-    ScalaJS.m.Lwebapp_WebInterface$().handleClick__O__V(x$2)
-  }))
-});
 ScalaJS.c.Lwebapp_WebInterface$.prototype.$$js$exported$meth$wrapExpr__sjs_js_Dictionary__O = (function(ast) {
   return this.wrapExpr__sjs_js_Dictionary__Last_Expr(ast)
+});
+ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapBooleanExpr__sjs_js_Dictionary__Last_BooleanExpr = (function(ast) {
+  if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast, "type"))) {
+    var x1 = ast["type"]
+  } else {
+    var x1;
+    throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + "type"))
+  };
+  if ((x1 === "BooleanBinOp")) {
+    return new ScalaJS.c.Last_BooleanBinOp().init___Last_BoolBinOperator__Last_Expr__Last_Expr(this.wrapBooleanBinOperator__T__Last_BoolBinOperator(this.getStr$2__p1__T__sjs_js_Dictionary__T("op", ast)), this.wrapExpr__sjs_js_Dictionary__Last_Expr(this.get$2__p1__T__sjs_js_Dictionary__sjs_js_Dictionary("lhs", ast)), this.wrapExpr__sjs_js_Dictionary__Last_Expr(this.get$2__p1__T__sjs_js_Dictionary__sjs_js_Dictionary("rhs", ast)))
+  } else {
+    throw new ScalaJS.c.s_MatchError().init___O(x1)
+  }
 });
 ScalaJS.c.Lwebapp_WebInterface$.prototype.get$1__p1__T__sjs_js_Dictionary__sjs_js_Dictionary = (function(name, ast$2) {
   if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast$2, name))) {
     return ast$2[name]
   } else {
     throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + name))
+  }
+});
+ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapBooleanBinOperator__T__Last_BoolBinOperator = (function(op) {
+  if ((op === "==")) {
+    return ScalaJS.m.Last_Equals$()
+  } else if ((op === ">")) {
+    return ScalaJS.m.Last_GreaterThan$()
+  } else if ((op === ">=")) {
+    return ScalaJS.m.Last_GreaterOrEqual$()
+  } else {
+    throw new ScalaJS.c.s_MatchError().init___O(op)
   }
 });
 ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapStatement__sjs_js_Dictionary__Last_Statement = (function(ast) {
@@ -9098,7 +9145,7 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapStatement__sjs_js_Dictionary__Last
     throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + "type"))
   };
   if ((x1 === "Assignment")) {
-    return new ScalaJS.c.Last_Assignment().init___T__Last_Expr(this.getStr$2__p1__T__sjs_js_Dictionary__T("name", ast), this.wrapExpr__sjs_js_Dictionary__Last_Expr(this.get$2__p1__T__sjs_js_Dictionary__sjs_js_Dictionary("rhs", ast)))
+    return new ScalaJS.c.Last_Assignment().init___T__Last_Expr(this.getStr$3__p1__T__sjs_js_Dictionary__T("name", ast), this.wrapExpr__sjs_js_Dictionary__Last_Expr(this.get$3__p1__T__sjs_js_Dictionary__sjs_js_Dictionary("rhs", ast)))
   } else if ((x1 === "Return")) {
     var array = ScalaJS.g["Object"]["keys"](ast);
     var this$5 = new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(array);
@@ -9106,11 +9153,102 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapStatement__sjs_js_Dictionary__Last
     var cbf = this$6.ReusableCBFInstance$2;
     var this$7 = ScalaJS.as.sci_List(ScalaJS.s.sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(this$5, cbf));
     if (ScalaJS.s.sc_LinearSeqOptimized$class__contains__sc_LinearSeqOptimized__O__Z(this$7, "value")) {
-      return new ScalaJS.c.Last_Return().init___s_Option(new ScalaJS.c.s_Some().init___O(this.wrapExpr__sjs_js_Dictionary__Last_Expr(this.get$2__p1__T__sjs_js_Dictionary__sjs_js_Dictionary("value", ast))))
+      return new ScalaJS.c.Last_Return().init___s_Option(new ScalaJS.c.s_Some().init___O(this.wrapExpr__sjs_js_Dictionary__Last_Expr(this.get$3__p1__T__sjs_js_Dictionary__sjs_js_Dictionary("value", ast))))
     } else {
       return new ScalaJS.c.Last_Return().init___s_Option(ScalaJS.m.s_None$())
     }
+  } else if ((x1 === "IfElse")) {
+    var jsx$5 = this.wrapBooleanExpr__sjs_js_Dictionary__Last_BooleanExpr(this.get$3__p1__T__sjs_js_Dictionary__sjs_js_Dictionary("condition", ast));
+    var f = (function(ast$2) {
+      return ScalaJS.m.Lwebapp_WebInterface$().wrapStatement__sjs_js_Dictionary__Last_Statement(ast$2)
+    });
+    var arr = this.getList$3__p1__T__sjs_js_Dictionary__sjs_js_Array("thenBlock", ast);
+    var this$9 = ScalaJS.m.sci_List$();
+    var cbf$1 = this$9.ReusableCBFInstance$2;
+    var b = cbf$1.apply__scm_Builder();
+    b.sizeHint__I__V(ScalaJS.uI(arr["length"]));
+    b.$$plus$plus$eq__sc_TraversableOnce__scg_Growable(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(arr));
+    var this$11 = ScalaJS.as.sci_List(b.result__O());
+    var this$10 = ScalaJS.m.sci_List$();
+    var bf = this$10.ReusableCBFInstance$2;
+    if ((bf === ScalaJS.m.sci_List$().ReusableCBFInstance$2)) {
+      if ((this$11 === ScalaJS.m.sci_Nil$())) {
+        var jsx$4 = ScalaJS.m.sci_Nil$()
+      } else {
+        var arg1 = this$11.head__O();
+        var h = new ScalaJS.c.sci_$colon$colon().init___O__sci_List(f(arg1), ScalaJS.m.sci_Nil$());
+        var t = h;
+        var rest = ScalaJS.as.sci_List(this$11.tail__O());
+        while ((rest !== ScalaJS.m.sci_Nil$())) {
+          var arg1$1 = rest.head__O();
+          var nx = new ScalaJS.c.sci_$colon$colon().init___O__sci_List(f(arg1$1), ScalaJS.m.sci_Nil$());
+          t.tl$5 = nx;
+          t = nx;
+          rest = ScalaJS.as.sci_List(rest.tail__O())
+        };
+        var jsx$4 = h
+      }
+    } else {
+      var b$1 = ScalaJS.s.sc_TraversableLike$class__builder$1__p0__sc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$11, bf);
+      var these = this$11;
+      while ((!these.isEmpty__Z())) {
+        var arg1$2 = these.head__O();
+        b$1.$$plus$eq__O__scm_Builder(f(arg1$2));
+        these = ScalaJS.as.sci_List(these.tail__O())
+      };
+      var jsx$4 = b$1.result__O()
+    };
+    var jsx$3 = ScalaJS.as.sci_List(jsx$4);
+    if (ScalaJS.uZ(ScalaJS.m.sjs_js_WrappedDictionary$Cache$().safeHasOwnProperty$1["call"](ast, "elseBlock"))) {
+      var f$1 = (function(ast$2$1) {
+        return ScalaJS.m.Lwebapp_WebInterface$().wrapStatement__sjs_js_Dictionary__Last_Statement(ast$2$1)
+      });
+      var arr$1 = this.getList$3__p1__T__sjs_js_Dictionary__sjs_js_Array("elseBlock", ast);
+      var this$15 = ScalaJS.m.sci_List$();
+      var cbf$2 = this$15.ReusableCBFInstance$2;
+      var b$2 = cbf$2.apply__scm_Builder();
+      b$2.sizeHint__I__V(ScalaJS.uI(arr$1["length"]));
+      b$2.$$plus$plus$eq__sc_TraversableOnce__scg_Growable(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(arr$1));
+      var this$17 = ScalaJS.as.sci_List(b$2.result__O());
+      var this$16 = ScalaJS.m.sci_List$();
+      var bf$1 = this$16.ReusableCBFInstance$2;
+      if ((bf$1 === ScalaJS.m.sci_List$().ReusableCBFInstance$2)) {
+        if ((this$17 === ScalaJS.m.sci_Nil$())) {
+          var jsx$2 = ScalaJS.m.sci_Nil$()
+        } else {
+          var arg1$3 = this$17.head__O();
+          var h$1 = new ScalaJS.c.sci_$colon$colon().init___O__sci_List(f$1(arg1$3), ScalaJS.m.sci_Nil$());
+          var t$1 = h$1;
+          var rest$1 = ScalaJS.as.sci_List(this$17.tail__O());
+          while ((rest$1 !== ScalaJS.m.sci_Nil$())) {
+            var arg1$4 = rest$1.head__O();
+            var nx$1 = new ScalaJS.c.sci_$colon$colon().init___O__sci_List(f$1(arg1$4), ScalaJS.m.sci_Nil$());
+            t$1.tl$5 = nx$1;
+            t$1 = nx$1;
+            rest$1 = ScalaJS.as.sci_List(rest$1.tail__O())
+          };
+          var jsx$2 = h$1
+        }
+      } else {
+        var b$3 = ScalaJS.s.sc_TraversableLike$class__builder$1__p0__sc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$17, bf$1);
+        var these$1 = this$17;
+        while ((!these$1.isEmpty__Z())) {
+          var arg1$5 = these$1.head__O();
+          b$3.$$plus$eq__O__scm_Builder(f$1(arg1$5));
+          these$1 = ScalaJS.as.sci_List(these$1.tail__O())
+        };
+        var jsx$2 = b$3.result__O()
+      };
+      var jsx$1 = ScalaJS.as.sci_List(jsx$2)
+    } else {
+      var jsx$1 = ScalaJS.m.sci_Nil$()
+    };
+    return new ScalaJS.c.Last_IfElse().init___Last_BooleanExpr__sci_List__sci_List(jsx$5, jsx$3, jsx$1)
   } else {
+    var x = new ScalaJS.c.s_StringContext().init___sc_Seq(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array(["that statement can't be parsed yet: ", ""])).s__sc_Seq__T(new ScalaJS.c.sjs_js_WrappedArray().init___sjs_js_Array([ScalaJS.as.T(ScalaJS.g["JSON"]["stringify"](ast))]));
+    var this$19 = ScalaJS.m.s_Console$();
+    var this$20 = this$19.outVar$2;
+    ScalaJS.as.Ljava_io_PrintStream(this$20.tl$1.get__O()).println__O__V(x);
     ScalaJS.m.s_Predef$().$$qmark$qmark$qmark__sr_Nothing$()
   }
 });
@@ -9142,7 +9280,7 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapFunctionDef__sjs_js_Dictionary__La
   var f = (function(ast$2) {
     return ScalaJS.m.Lwebapp_WebInterface$().wrapArg__sjs_js_Dictionary__T2(ast$2)
   });
-  var arr = this.getList$3__p1__T__sjs_js_Dictionary__sjs_js_Array("args", ast);
+  var arr = this.getList$4__p1__T__sjs_js_Dictionary__sjs_js_Array("args", ast);
   var this$2 = ScalaJS.m.sci_List$();
   var cbf = this$2.ReusableCBFInstance$2;
   var b = cbf.apply__scm_Builder();
@@ -9179,12 +9317,12 @@ ScalaJS.c.Lwebapp_WebInterface$.prototype.wrapFunctionDef__sjs_js_Dictionary__La
     var jsx$1 = b$1.result__O()
   };
   var args = ScalaJS.as.sci_List(jsx$1);
-  var jsx$4 = this.getStr$3__p1__T__sjs_js_Dictionary__T("name", ast);
+  var jsx$4 = this.getStr$4__p1__T__sjs_js_Dictionary__T("name", ast);
   var jsx$3 = ScalaJS.as.sci_Map(ScalaJS.m.s_Predef$().Map$2.apply__sc_Seq__sc_GenMap(ScalaJS.m.sci_Nil$()));
   var f$1 = (function(ast$2$1) {
     return ScalaJS.m.Lwebapp_WebInterface$().wrapStatement__sjs_js_Dictionary__Last_Statement(ast$2$1)
   });
-  var arr$1 = this.getList$3__p1__T__sjs_js_Dictionary__sjs_js_Array("body", ast);
+  var arr$1 = this.getList$4__p1__T__sjs_js_Dictionary__sjs_js_Array("body", ast);
   var this$6 = ScalaJS.m.sci_List$();
   var cbf$1 = this$6.ReusableCBFInstance$2;
   var b$2 = cbf$1.apply__scm_Builder();

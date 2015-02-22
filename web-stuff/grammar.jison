@@ -10,12 +10,17 @@
 "/"                   return '/'
 "-"                   return '-'
 "+"                   return '+'
-"^"                   return '^'
+"%"                   return '%'
 "("                   return '('
 ")"                   return ')'
+"=="                  return '=='
+">"                   return '>'
+">="                   return '>='
 "="                   return '='
 ";"                   return ';'
 "int"                 return 'INT'
+"if"                  return 'IF'
+"else"                return 'ELSE'
 "void"                return 'VOID'
 "return"                return 'RETURN'
 "{"                   return '{'
@@ -30,8 +35,7 @@
 /* operator associations and precedence */
 
 %left '+' '-'
-%left '*' '/'
-%left '^'
+%left '*' '/' '%'
 %left UMINUS
 
 %start program
@@ -79,6 +83,10 @@ stat
         {$$ = {type: "Return"};}
     | RETURN expr ';'
         {$$ = {type: "Return", value: $2};}
+    | IF '(' boolExpr ')' '{' body '}'
+        {$$ = {type: "IfElse", condition: $3, thenBlock: $6};}
+    | IF '(' boolExpr ')' '{' body '}' ELSE '{' body '}'
+        {$$ = {type: "IfElse", condition: $3, thenBlock: $6, elseBlock: $10};}
     ;
 
 expr
@@ -90,6 +98,8 @@ expr
         {$$ = {type: "BinOp", op: "*", lhs: $1, rhs: $3};;}
     | expr '/' expr
         {$$ = {type: "BinOp", op: "/", lhs: $1, rhs: $3};}
+    | expr '%' expr
+        {$$ = {type: "BinOp", op: "%", lhs: $1, rhs: $3};}
     | '-' expr %prec UMINUS
         {$$ = {type: "BinOp", op: "-", lhs: {type: "Lit", value: 0}, rhs: $3};}
     | '(' expr ')'
@@ -98,4 +108,18 @@ expr
         {$$ = {type: "Var", name: $1};}
     | NUMBER
         {$$ = {type: "Lit", value: $1};}
+    ;
+
+boolBinOperator
+    : '=='
+        {$$ = $1}
+    | '>'
+        {$$ = $1}
+    | '>='
+        {$$ = $1}
+    ;
+
+boolExpr
+    : expr boolBinOperator expr
+        {$$ = {type: "BooleanBinOp", op: $2, lhs: $1, rhs: $3};}
     ;

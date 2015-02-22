@@ -13,8 +13,12 @@
 <body>
 
 <textarea id="editor">
-int id(int x) {
-    return x;
+int hailstone(int x) {
+    if (x % 2 == 0) {
+        return x / 2;
+    } else {
+        return 3 * x;
+    }
 }
 </textarea>
 
