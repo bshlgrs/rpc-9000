@@ -25,7 +25,7 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
     emit(ASM_Label(block.name))
 
     for((inter, index : Int) <- block.code.view.zipWithIndex) {
-      if (options("printInterInstrs")) {
+      if (options.getOrElse("printInterInstrs", false)) {
         inter match {
           case CommentInter(_) => ()
           case LabelInter(_) => ()

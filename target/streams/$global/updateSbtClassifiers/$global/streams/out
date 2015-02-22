@@ -972,9 +972,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#cache;0.13.7!cache.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.7!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.7!apply-macro.jar
-[debug] :: resolution report :: resolve 476ms :: artifacts dl 19ms
+[debug] :: resolution report :: resolve 428ms :: artifacts dl 16ms
 [debug] 	report for default#rpc-9000$sbt_sjs0.6_2.11;1.0 default produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sbt_sjs0.6_2.11-default.xml
-[debug] 	resolve done (476ms resolve - 19ms download)
+[debug] 	resolve done (428ms resolve - 16ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#rpc-9000$sources_sjs0.6_2.11;1.0
 [debug] 	confs: [default]
@@ -1400,6 +1400,6 @@
 [debug] 	[NOT REQUIRED] org.scala-js#scalajs-js-envs_2.10;0.6.0!scalajs-js-envs_2.10.jar(src)
 [debug] 	[NOT REQUIRED] io.apigee#rhino;1.7R5pre4!rhino.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.0!scalajs-sbt-test-adapter_2.10.jar(src)
-[debug] :: resolution report :: resolve 126ms :: artifacts dl 15ms
+[debug] :: resolution report :: resolve 74ms :: artifacts dl 21ms
 [debug] 	report for default#rpc-9000$sources_sjs0.6_2.11;1.0 default produced in /Users/bshlegeris/Dropbox/repos/rpc-9000/target/resolution-cache/reports/default-rpc-9000$sources_sjs0.6_2.11-default.xml
-[debug] 	resolve done (126ms resolve - 15ms download)
+[debug] 	resolve done (74ms resolve - 21ms download)

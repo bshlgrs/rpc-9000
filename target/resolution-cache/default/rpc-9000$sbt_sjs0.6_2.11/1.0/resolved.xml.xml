@@ -4,7 +4,7 @@
 		module="rpc-9000$sbt_sjs0.6_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150221124521"
+		publication="20150222042812"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

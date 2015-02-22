@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="default"
 		confs="default"
-		date="20150221124521"/>
+		date="20150222042812"/>
 	<dependencies>
 		<module organisation="org.scala-js" name="sbt-scalajs">
 			<revision name="0.6.0" status="release" pubdate="20150130015205" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="46">

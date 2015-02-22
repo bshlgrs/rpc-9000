@@ -13,3 +13,7 @@ last
 fastOptJS
 ~ fastOptJS
 console
+~ compile
+~ fastOptJS
+reload
+~ fastOptJS

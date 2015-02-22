@@ -45,7 +45,7 @@ program
 
 function
     : INT NAME '(' listOfArgs '{' body '}'
-        {$$ = ["FunctionDef", $2, $4, $6];}
+        {$$ = {type: "FunctionDef", name: $2, args: $4, body: $6};}
     ;
 
 listOfArgs
@@ -64,7 +64,7 @@ body
 
 arg
     : type NAME
-        {$$ = [$1, $2];}
+        {$$ = {name: $2, ctype: $1};}
     ;
 
 type
@@ -76,9 +76,9 @@ stat
     : NAME '=' expr ';'
         {$$ = {type: "Assignment", name: $1, rhs: $3};}
     | RETURN ';'
-        {$$ = ["Return"];}
+        {$$ = {type: "Return"};}
     | RETURN expr ';'
-        {$$ = ["Return", $2];}
+        {$$ = {type: "Return", value: $2};}
     ;
 
 expr
@@ -91,11 +91,11 @@ expr
     | expr '/' expr
         {$$ = {type: "BinOp", op: "/", lhs: $1, rhs: $3};}
     | '-' expr %prec UMINUS
-        {$$ = {type: "BinOp", op: "-", lhs: ["IntLit", 0], rhs: $3};}
+        {$$ = {type: "BinOp", op: "-", lhs: {type: "Lit", value: 0}, rhs: $3};}
     | '(' expr ')'
         {$$ = $2;}
     | NAME
-        {$$ = {type: "Var", name: $1];}
+        {$$ = {type: "Var", name: $1};}
     | NUMBER
-        {$$ = {type: "Lit", value: Number(yytext)];}
+        {$$ = {type: "Lit", value: $1};}
     ;

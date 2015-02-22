@@ -14,4 +14,8 @@ object Counter {
     counter = counter + 1
     "$tmp" + counter.toString
   }
+
+  def reset() = {
+    counter = 0
+  }
 }

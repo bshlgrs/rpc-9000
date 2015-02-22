@@ -161,7 +161,6 @@ case class ArrayAssignment(name: String, exprs: List[Expr]) extends Statement {
     } else {
       val counter = name+"-"+Counter.getCounter()
       val start = CopyInter(VOLVar(name), counter)
-
       val blockCode = (for {
         (expr, index) <- exprs.view.zipWithIndex
       } yield {
@@ -169,9 +168,9 @@ case class ArrayAssignment(name: String, exprs: List[Expr]) extends Statement {
         instrs ::: List(StoreInter(resultPlace, VOLVar(counter))) :::
           List(BinOpInter(
             AddOp, VOLVar(counter), VOLLit(1), counter))
-      }).toList.flatten // forget the last one
+      }).toList.flatten
 
-      CommentInter(this.toString()) +: (start +: blockCode)
+      List(CommentInter(this.toString()), start) ::: blockCode
     }
   }
 }

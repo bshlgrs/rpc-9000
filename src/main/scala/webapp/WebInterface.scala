@@ -1,21 +1,29 @@
 package webapp
 
-/**
- * Created by bshlegeris on 2/21/15.
- */
-
 import scala.Any
 import scala.scalajs.js
 import scala.scalajs.js._
 import scala.scalajs.js.annotation.JSExport
+import org.scalajs.jquery.{JQuery, jQuery}
 
 import ast._
 
 @JSExport
 object WebInterface extends JSApp {
   def main(): Unit = {
-    val function = new FunctionDefinition("whatever", Nil, Map("x" -> 1), Nil)
-    println(function.toAssembly(Nil).mkString("\n"))
+    jQuery("#compile-button").on("click", handleClick _)
+  }
+
+  @JSExport
+  def handleClick(x: Any): Unit = {
+    Counter.reset()
+    val input = jQuery("#editor").`val`().asInstanceOf[String]
+    val ast = Parser.parse(input)
+    jQuery("#ast-output").text(JSON.stringify(ast))
+    val function = wrapFunctionDef(ast)
+    jQuery("#intermediate-output").html(s"<pre>${function.toIntermediate().mkString("\n")}</pre>")
+    val text = s"<pre>${function.toAssembly(Nil).mkString("\n")}</pre>"
+    jQuery("#assembly-output").html(text)
   }
 
   @JSExport
@@ -34,7 +42,7 @@ object WebInterface extends JSApp {
       case "BinOp" => BinOp(wrapBinOperator(getStr("op")), wrapExpr(get("lhs")), wrapExpr(get("rhs")))
       case "Var" => Var(getStr("name"))
       case "Load" => Load(wrapExpr(get("expr")))
-      case "FunctionCall" => FunctionCall(getStr("name"), wrapExprs(getList("args")))
+      case "FunctionCall" => FunctionCall(getStr("name"), mapWrap(wrapExpr, getList("args")))
       case "IfExpression" => ???
       case "StringLiteral" => ???
       case "PointerToName" => ???
@@ -48,17 +56,13 @@ object WebInterface extends JSApp {
 
     ast("type") match {
       case "Assignment" => Assignment(getStr("name"), wrapExpr(get("rhs")))
-      case "Return" => if (ast.keys.toList.contains("expr")) {
-        Return(Some(wrapExpr(get("expr"))))
+      case "Return" => if (ast.keys.toList.contains("value")) {
+        Return(Some(wrapExpr(get("value"))))
       } else {
         Return(None)
       }
       case _ => ???
     }
-  }
-
-  def wrapExprs(asts: js.Array[js.Dictionary[Any]]): List[Expr] = {
-    asts.toList.map(wrapExpr)
   }
 
   def wrapBinOperator(op: String): BinaryOperator = op match {
@@ -68,4 +72,21 @@ object WebInterface extends JSApp {
     case "/" => DivOp
     case "%" => ModOp
   }
+
+  @JSExport
+  def wrapFunctionDef(ast: js.Dictionary[Any]): FunctionDefinition = {
+    def getStr(name: String) = ast(name).asInstanceOf[String]
+    def get(name: String) = ast(name).asInstanceOf[js.Dictionary[Any]]
+    def getList(name: String) = ast(name).asInstanceOf[js.Array[js.Dictionary[Any]]]
+
+    val args = mapWrap(wrapArg, getList("args"))
+
+    new FunctionDefinition(getStr("name"), args, Map(), mapWrap(wrapStatement, getList("body")))
+  }
+
+  def mapWrap[A, B](f: A => B, arr: js.Array[A]): List[B] = {
+    arr.toList.map(f)
+  }
+
+  def wrapArg(ast: js.Dictionary[Any]): (String, CType) = ast("name").asInstanceOf[String] -> IntType
 }

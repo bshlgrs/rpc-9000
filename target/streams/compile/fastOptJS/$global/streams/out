@@ -1,17 +1,17 @@
 [0m[[0minfo[0m] [0mFast optimizing /Users/bshlegeris/Dropbox/repos/rpc-9000/target/scala-2.11/rpc-9000-fastopt.js[0m
-[0m[[0mdebug[0m] [0mLinker: Read info: 5489 us[0m
-[0m[[0mdebug[0m] [0mLinker: Compute reachability: 44284 us[0m
-[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 175497 us[0m
-[0m[[0mdebug[0m] [0mLinker: cache stats: reused: 3033 -- invalidated: 1 -- trees read: 1[0m
-[0m[[0mdebug[0m] [0mLinker: 226262 us[0m
+[0m[[0mdebug[0m] [0mLinker: Read info: 5420 us[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 52594 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 233987 us[0m
+[0m[[0mdebug[0m] [0mLinker: cache stats: reused: 3509 -- invalidated: 1 -- trees read: 1[0m
+[0m[[0mdebug[0m] [0mLinker: 293916 us[0m
 [0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: false[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 8342 us[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 1740 methods.[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 42475 us[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: 53629 us[0m
-[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 35690 us[0m
-[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 2608 us[0m
-[0m[[0mdebug[0m] [0mRefiner: 38366 us[0m
-[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 522 -- invalidated: 1[0m
-[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 1948 -- invalidated: 961[0m
-[0m[[0mdebug[0m] [0mEmitter (write output): 97517 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 10274 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 1750 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 39694 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 51840 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 43557 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 6495 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 50236 us[0m
+[0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 524 -- invalidated: 1[0m
+[0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 1958 -- invalidated: 968[0m
+[0m[[0mdebug[0m] [0mEmitter (write output): 123548 us[0m

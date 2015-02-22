@@ -5,13 +5,16 @@ import scala.scalajs.js.annotation.JSExport
 import assembler._
 
 @JSExport
-class FunctionDefinition(val name: String, params: List[String], val vars: Map[String, Integer],
+class FunctionDefinition(val name: String, params: List[(String, CType)], val vars: Map[String, Integer],
                body: List[Statement]) {
   override def toString = "def " + name + "(" + params.mkString(", ") +
     ") (" + vars.mkString(", ") + ") {\n" + body.mkString("\n") + "\n}"
 
+  val paramNames = params.map(_._1)
+
+  @JSExport
   // Style question: should this be def or val?
-  def toIntermediate: List[IntermediateInstruction] = {
+  def toIntermediate(): List[IntermediateInstruction] = {
     var out = List[IntermediateInstruction]()
     for (line <- body) {
       out = out ::: line.toIntermediate
@@ -49,7 +52,7 @@ class FunctionDefinition(val name: String, params: List[String], val vars: Map[S
   val localsMap: Map[String, Int] = {
     val dict = collection.mutable.Map[String, Int]()
 
-    for ((x:String, i:Int) <- params.view.zipWithIndex) {
+    for (((x:String, _), i:Int) <- params.view.zipWithIndex) {
       dict(x) = i - params.length
     }
 

@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>rPeANUt compiler</title>
+    <!-- Include JavaScript dependencies -->
+    <script type="text/javascript" src="./jquery.js"></script>
+    <script type="text/javascript" src="../target/scala-2.11/rpc-9000-fastopt.js"></script>
+    <script type="text/javascript" src="./utils.js"></script>
+    <script type="text/javascript" src="./parser.js"></script>
+    <script type="text/javascript" src="./ace.js"></script>
 </head>
 <body>
-<script type="text/javascript" src="../target/scala-2.11/rpc-9000-fastopt.js"></script>
-<script type="text/javascript" src="./parser.js"></script>
-<script type="text/javascript" src="./utils.js"></script>
-<script type="text/javascript">
-      webapp.WebInterface().main();
-    </script>
+
+<textarea id="editor">
+int id(int x) {
+    return x;
+}
+</textarea>
+
+<button id="compile-button">compile!</button>
+
+<h3>ast</h3>
+<div id="ast-output"></div>
+
+<h3>intermediate</h3>
+<div id="intermediate-output"></div>
+
+<h3>assembly</h3>
+<div id="assembly-output"></div>
+
+
 </body>
+
+<script type="text/javascript">
+  webapp.WebInterface().main();
+  // var editor = ace.edit("editor");
+</script>
+
 </html>
