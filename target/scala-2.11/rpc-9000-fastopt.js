@@ -5901,14 +5901,14 @@ ScalaJS.s.sc_MapLike$class__apply__sc_MapLike__O__O = (function($$this, key) {
 ScalaJS.s.sc_MapLike$class__isEmpty__sc_MapLike__Z = (function($$this) {
   return ($$this.size__I() === 0)
 });
-ScalaJS.s.sc_MapLike$class__contains__sc_MapLike__O__Z = (function($$this, key) {
-  return $$this.get__O__s_Option(key).isDefined__Z()
-});
 ScalaJS.s.sc_MapLike$class__toBuffer__sc_MapLike__scm_Buffer = (function($$this) {
   var result = new ScalaJS.c.scm_ArrayBuffer().init___I($$this.size__I());
   var xs = $$this.seq__sc_TraversableOnce();
   result.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(xs);
   return result
+});
+ScalaJS.s.sc_MapLike$class__contains__sc_MapLike__O__Z = (function($$this, key) {
+  return $$this.get__O__s_Option(key).isDefined__Z()
 });
 ScalaJS.s.sc_MapLike$class__$default__sc_MapLike__O__O = (function($$this, key) {
   throw new ScalaJS.c.ju_NoSuchElementException().init___T(("key not found: " + key))
@@ -28701,11 +28701,11 @@ ScalaJS.c.sc_AbstractIterable.prototype.sameElements__sc_GenIterable__Z = (funct
 ScalaJS.c.sc_AbstractIterable.prototype.thisCollection__sc_Traversable = (function() {
   return this.thisCollection__sc_Iterable()
 });
-ScalaJS.c.sc_AbstractIterable.prototype.isEmpty__Z = (function() {
-  return ScalaJS.s.sc_IterableLike$class__isEmpty__sc_IterableLike__Z(this)
-});
 ScalaJS.c.sc_AbstractIterable.prototype.seq__sc_Iterable = (function() {
   return this
+});
+ScalaJS.c.sc_AbstractIterable.prototype.isEmpty__Z = (function() {
+  return ScalaJS.s.sc_IterableLike$class__isEmpty__sc_IterableLike__Z(this)
 });
 ScalaJS.c.sc_AbstractIterable.prototype.companion__scg_GenericCompanion = (function() {
   return ScalaJS.m.sc_Iterable$()
@@ -28934,12 +28934,12 @@ ScalaJS.c.sci_StringOps.prototype.hashCode__I = (function() {
   var $$this = this.repr$1;
   return ScalaJS.m.sjsr_RuntimeString$().hashCode__T__I($$this)
 });
-ScalaJS.c.sci_StringOps.prototype.scala$collection$IndexedSeqOptimized$$super$zip__sc_GenIterable__scg_CanBuildFrom__O = (function(that, bf) {
-  return ScalaJS.s.sc_IterableLike$class__zip__sc_IterableLike__sc_GenIterable__scg_CanBuildFrom__O(this, that, bf)
-});
 ScalaJS.c.sci_StringOps.prototype.init___T = (function(repr) {
   this.repr$1 = repr;
   return this
+});
+ScalaJS.c.sci_StringOps.prototype.scala$collection$IndexedSeqOptimized$$super$zip__sc_GenIterable__scg_CanBuildFrom__O = (function(that, bf) {
+  return ScalaJS.s.sc_IterableLike$class__zip__sc_IterableLike__sc_GenIterable__scg_CanBuildFrom__O(this, that, bf)
 });
 ScalaJS.c.sci_StringOps.prototype.toCollection__O__sc_Seq = (function(repr) {
   this.repr$1;
@@ -36273,12 +36273,12 @@ ScalaJS.c.sci_WrappedString.prototype.copyToArray__O__I__I__V = (function(xs, st
 ScalaJS.c.sci_WrappedString.prototype.hashCode__I = (function() {
   return ScalaJS.m.s_util_hashing_MurmurHash3$().seqHash__sc_Seq__I(this)
 });
-ScalaJS.c.sci_WrappedString.prototype.scala$collection$IndexedSeqOptimized$$super$zip__sc_GenIterable__scg_CanBuildFrom__O = (function(that, bf) {
-  return ScalaJS.s.sc_IterableLike$class__zip__sc_IterableLike__sc_GenIterable__scg_CanBuildFrom__O(this, that, bf)
-});
 ScalaJS.c.sci_WrappedString.prototype.init___T = (function(self) {
   this.self$4 = self;
   return this
+});
+ScalaJS.c.sci_WrappedString.prototype.scala$collection$IndexedSeqOptimized$$super$zip__sc_GenIterable__scg_CanBuildFrom__O = (function(that, bf) {
+  return ScalaJS.s.sc_IterableLike$class__zip__sc_IterableLike__sc_GenIterable__scg_CanBuildFrom__O(this, that, bf)
 });
 ScalaJS.c.sci_WrappedString.prototype.slice__I__I__sci_WrappedString = (function(from, until) {
   var start = ((from < 0) ? 0 : from);
