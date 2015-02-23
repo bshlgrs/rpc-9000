@@ -15,21 +15,16 @@ class FunctionDefinition(val name: String, params: List[(String, CType)], val va
   @JSExport
   // Style question: should this be def or val?
   def toIntermediate(): List[IntermediateInstruction] = {
-    CommentInter(s"$name function definition: ") +: body.flatMap(_.toIntermediate)
+    CommentInter(s"$name function definition: ") +: body.flatMap(_.toIntermediate())
   }
 
   val allExpressions: List[Expr] = body.map{_.allExpressions}.flatten
 
   val strings: List[String] = allExpressions.map{_.strings}.flatten
 
-  val blocks: List[Block] = AssemblyMaker.separateIntoBlocks(toIntermediate)
+  val blocks: List[Block] = AssemblyMaker.separateIntoBlocks(toIntermediate())
 
   val returnPosition = - params.length - 1
-
-  // Trust me, I write compilers, I know what I'm doing...
-  // val localVars: List[String] =  {
-  //   allVars.filter{isLocal(_)}
-  // }
 
   // Trust me, I write compilers, I know what I'm doing...
   val localVars: List[String] =  {
@@ -80,7 +75,7 @@ class FunctionDefinition(val name: String, params: List[(String, CType)], val va
   }
 
   def functionDependencies(): List[String] = {
-    for (CallInter(x, _, _) <- this.toIntermediate) yield x
+    for (CallInter(x, _, _) <- this.toIntermediate()) yield x
   }
 
   def isProcedure: Boolean = {

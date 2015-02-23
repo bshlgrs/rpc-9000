@@ -17,9 +17,9 @@ object WebInterface extends JSApp {
 
   def handleClick(x: Any): Unit = {
     Counter.reset()
-    val input = Parser.getBody()
-    val ast = Parser.parse(input).asInstanceOf[js.Array[js.Dictionary[Any]]]
-    jQuery("#ast-output").html(Parser.jsonTree(ast))
+    val input = JsInterface.getBody()
+    val ast = JsInterface.parse(input).asInstanceOf[js.Array[js.Dictionary[Any]]]
+    jQuery("#ast-output").html(JsInterface.jsonTree(ast))
     val compiler = Compiler(ast.toList.map(wrapFunctionDef))
     jQuery("#intermediate-output").html(s"${compiler.toIntermediate().mkString("\n")}")
     val text = s"<pre>${compiler.toAssembly().mkString("\n")}</pre>"

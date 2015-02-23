@@ -6,7 +6,7 @@ import scala.scalajs.js.Dictionary
 /**
  * Created by bshlegeris on 2/22/15.
  */
-object Parser extends js.Object {
+object JsInterface extends js.Object {
   def parse(str: String): js.Dictionary[Any] = js.native
 
   def getBody(): String = js.native
