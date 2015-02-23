@@ -8,11 +8,17 @@
     <script type="text/javascript" src="../target/scala-2.11/rpc-9000-fastopt.js"></script>
     <script type="text/javascript" src="./utils.js"></script>
     <script type="text/javascript" src="./parser.js"></script>
-    <script type="text/javascript" src="./ace.js"></script>
+    <script type="text/javascript" src="./bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
 </head>
 <body>
 
-<textarea id="editor">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>rPeANUt compiler</h1>
+            <p>source <a href="http://www.github.com/bshlgrs/rpc-9000">here</a></p>
+<textarea id="editor" rows="20" style="width: 100%;">
 int hailstone(int x) {
     if (x % 2 == 0) {
         return x / 2;
@@ -20,25 +26,30 @@ int hailstone(int x) {
         return 3 * x;
     }
 }
+
+int square(int x) {
+    return x * x;
+}
 </textarea>
 
-<button id="compile-button">compile!</button>
+            <button class="button btn-primary" id="compile-button">compile!</button>
 
-<h3>ast</h3>
-<div id="ast-output"></div>
+            <h3>ast</h3>
+            <div id="ast-output"></div>
 
-<h3>intermediate</h3>
-<div id="intermediate-output"></div>
+            <h3>intermediate</h3>
+            <div id="intermediate-output"></div>
 
-<h3>assembly</h3>
-<div id="assembly-output"></div>
+            <h3>assembly</h3>
+            <div id="assembly-output"></div>
+        </div>
 
-
+    </div>
+    </div>
 </body>
 
 <script type="text/javascript">
   webapp.WebInterface().main();
-  // var editor = ace.edit("editor");
 </script>
 
 </html>

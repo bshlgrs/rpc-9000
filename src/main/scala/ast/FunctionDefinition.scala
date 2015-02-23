@@ -15,11 +15,7 @@ class FunctionDefinition(val name: String, params: List[(String, CType)], val va
   @JSExport
   // Style question: should this be def or val?
   def toIntermediate(): List[IntermediateInstruction] = {
-    var out = List[IntermediateInstruction]()
-    for (line <- body) {
-      out = out ::: line.toIntermediate
-    }
-    out
+    CommentInter(s"$name function definition: ") +: body.flatMap(_.toIntermediate)
   }
 
   val allExpressions: List[Expr] = body.map{_.allExpressions}.flatten

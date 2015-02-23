@@ -1,12 +1,17 @@
 package compiler
+
+import assembler.Assembly
 import ast._
 
 /**
  * Created by bshlegeris on 2/20/15.
  */
-object Compiler {
-  def main (args: Array[String]) {
-    val function = new FunctionDefinition("whatever", Nil, Map("x" -> 1), Nil)
-    println(function.toAssembly(Nil).mkString("\n"))
+case class Compiler(functions: List[FunctionDefinition]) {
+  def toIntermediate(): List[IntermediateInstruction] = {
+    functions.flatMap(_.toIntermediate())
+  }
+
+  def toAssembly(): List[Assembly] = {
+    functions.flatMap(_.toAssembly(Nil))
   }
 }

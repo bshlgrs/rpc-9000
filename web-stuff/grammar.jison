@@ -22,7 +22,7 @@
 "if"                  return 'IF'
 "else"                return 'ELSE'
 "void"                return 'VOID'
-"return"                return 'RETURN'
+"return"              return 'RETURN'
 "{"                   return '{'
 "}"                   return '}'
 ","                   return ','
@@ -43,8 +43,15 @@
 %% /* language grammar */
 
 program
-    : function EOF
-        {return $1;}
+    : listOfFunctions
+        { return $1;}
+    ;
+
+listOfFunctions
+    : function listOfFunctions
+        {$$ = [$1].concat($2);}
+    | function EOF
+        {$$ = [$1];}
     ;
 
 function
@@ -56,6 +63,15 @@ listOfArgs
     : arg ')'
         {$$ = [$1];}
     | arg ',' listOfArgs
+        {$$ = [$1].concat($3);}
+    ;
+
+listOfFunctionArgs
+    : expr ')'
+        {$$ = [$1];}
+    | ')'
+        {$$ = [];}
+    | expr ',' listOfFunctionArgs
         {$$ = [$1].concat($3);}
     ;
 
@@ -104,6 +120,8 @@ expr
         {$$ = {type: "BinOp", op: "-", lhs: {type: "Lit", value: 0}, rhs: $3};}
     | '(' expr ')'
         {$$ = $2;}
+    | NAME '(' listOfFunctionArgs
+        {$$ = {type: "FunctionCall", name: $1, args: $3};}
     | NAME
         {$$ = {type: "Var", name: $1};}
     | NUMBER

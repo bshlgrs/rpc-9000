@@ -4,6 +4,7 @@ import scala.Any
 import scala.scalajs.js
 import scala.scalajs.js._
 import scala.scalajs.js.annotation.JSExport
+import compiler.Compiler
 import org.scalajs.jquery.{JQuery, jQuery}
 
 import ast._
@@ -14,21 +15,15 @@ object WebInterface extends JSApp {
     jQuery("#compile-button").on("click", handleClick _)
   }
 
-  @JSExport
   def handleClick(x: Any): Unit = {
     Counter.reset()
     val input = jQuery("#editor").`val`().asInstanceOf[String]
-    val ast = Parser.parse(input)
+    val ast = Parser.parse(input).asInstanceOf[js.Array[js.Dictionary[Any]]]
     jQuery("#ast-output").text(JSON.stringify(ast))
-    val function = wrapFunctionDef(ast)
-    jQuery("#intermediate-output").html(s"<pre>${function.toIntermediate().mkString("\n")}</pre>")
-    val text = s"<pre>${function.toAssembly(Nil).mkString("\n")}</pre>"
+    val compiler = Compiler(ast.toList.map(wrapFunctionDef))
+    jQuery("#intermediate-output").html(s"<pre>${compiler.toIntermediate().mkString("\n")}</pre>")
+    val text = s"<pre>${compiler.toAssembly().mkString("\n")}</pre>"
     jQuery("#assembly-output").html(text)
-  }
-
-  @JSExport
-  def compile(expr: Expr): String = {
-    expr.toString
   }
 
   @JSExport
