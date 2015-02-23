@@ -17,11 +17,11 @@ object WebInterface extends JSApp {
 
   def handleClick(x: Any): Unit = {
     Counter.reset()
-    val input = jQuery("#editor").`val`().asInstanceOf[String]
+    val input = Parser.getBody()
     val ast = Parser.parse(input).asInstanceOf[js.Array[js.Dictionary[Any]]]
-    jQuery("#ast-output").text(JSON.stringify(ast))
+    jQuery("#ast-output").html(Parser.jsonTree(ast))
     val compiler = Compiler(ast.toList.map(wrapFunctionDef))
-    jQuery("#intermediate-output").html(s"<pre>${compiler.toIntermediate().mkString("\n")}</pre>")
+    jQuery("#intermediate-output").html(s"${compiler.toIntermediate().mkString("\n")}")
     val text = s"<pre>${compiler.toAssembly().mkString("\n")}</pre>"
     jQuery("#assembly-output").html(text)
   }
