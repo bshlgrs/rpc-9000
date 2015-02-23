@@ -1,17 +1,17 @@
 [0m[[0minfo[0m] [0mFast optimizing /Users/bshlegeris/Dropbox/repos/rpc-9000/target/scala-2.11/rpc-9000-fastopt.js[0m
-[0m[[0mdebug[0m] [0mLinker: Read info: 6068 us[0m
-[0m[[0mdebug[0m] [0mLinker: Compute reachability: 54812 us[0m
-[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 169567 us[0m
+[0m[[0mdebug[0m] [0mLinker: Read info: 5305 us[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 46168 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 138813 us[0m
 [0m[[0mdebug[0m] [0mLinker: cache stats: reused: 3509 -- invalidated: 2 -- trees read: 1[0m
-[0m[[0mdebug[0m] [0mLinker: 231691 us[0m
+[0m[[0mdebug[0m] [0mLinker: 191555 us[0m
 [0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: false[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 11740 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 12358 us[0m
 [0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 1756 methods.[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 76195 us[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: 95260 us[0m
-[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 36975 us[0m
-[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 3828 us[0m
-[0m[[0mdebug[0m] [0mRefiner: 40885 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 52592 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 70301 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 59308 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 6969 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 66371 us[0m
 [0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 525 -- invalidated: 1[0m
 [0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 1964 -- invalidated: 975[0m
-[0m[[0mdebug[0m] [0mEmitter (write output): 131062 us[0m
+[0m[[0mdebug[0m] [0mEmitter (write output): 122049 us[0m
