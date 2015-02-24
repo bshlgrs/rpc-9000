@@ -11,10 +11,12 @@ import ast._
 
 @JSExport
 object WebInterface extends JSApp {
+  @JSExport
   def main(): Unit = {
     jQuery("#compile-button").on("click", handleClick _)
   }
 
+  @JSExport
   def handleClick(x: Any): Unit = {
     Counter.reset()
     val input = JsInterface.getBody()

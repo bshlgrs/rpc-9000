@@ -10,6 +10,7 @@
     <script type="text/javascript" src="./js/parser.js"></script>
     <script type="text/javascript" src="./js/jsonTree.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jsInterface.js"></script>
     <script src="./jquery-ace/ace/ace.js"></script>
     <script src="./jquery-ace/ace/theme-monokai.js"></script>
     <script src="./jquery-ace/ace/mode-c_cpp.js"></script>
@@ -62,14 +63,6 @@ int square(int x) {
 
             <h3>assembly</h3>
             <div id="assembly-output"></div>
-
-            <footer>
-                <p>TODO: Libraries used:</p>
-                <ul>
-                    <li>ACE cloud editor, packaged nicely here</li>
-                    <li>JSONTree.js</li>
-                </ul>
-            </footer>
         </div>
 
     </div>
@@ -78,17 +71,11 @@ int square(int x) {
 
 <script type="text/javascript">
   webapp.WebInterface().main();
+  $(function() {
+    webapp.WebInterface().handleClick();
+  });
 
   var editor = $('.my-code-area').ace({ theme: 'monokai', lang: 'c_cpp' });
-  JsInterface = {
-    getBody: function () {
-      return editor.val();
-    },
-    jsonTree: function(stuff) {
-      return JSONTree.create(stuff);
-    },
-    parse: Parser.parse.bind(Parser)
-  };
 </script>
 
 </html>
