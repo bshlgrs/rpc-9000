@@ -1,7 +1,6 @@
 package webapp
 
 import scala.scalajs.js
-import scala.scalajs.js.Dictionary
 
 /**
  * Created by bshlegeris on 2/22/15.
