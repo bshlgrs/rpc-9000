@@ -1,7 +1,9 @@
 package compiler
 
-import assembler.{ASM_Return, Assembly}
-import ast.{ReturnVoidInter, IntermediateInstruction}
+import scala.scalajs.js
+
+import assembler.{ASM_Jump, ASM_Return, Assembly}
+import ast._
 import utils._
 
 /**
@@ -9,6 +11,8 @@ import utils._
  */
 
 object IntermediateKeyholeOptimizer {
+
+
   val identityOptimization = (zipper: Zipper[IntermediateInstruction]) => {
     List(zipper.item)
   }
@@ -22,7 +26,24 @@ object IntermediateKeyholeOptimizer {
     }
   }
 
-  val optimizations = List(removeConsecutiveReturnStatements)
+  val removeJumpsToImmediateLabels : Optimization = (zipper) => {
+    zipper.item match {
+      case JumpInter(label) => {
+        val whatever = zipper.next.find(! _.isInstanceOf[CommentInter])
+        js.debugger()
+//        zipper.prev.find(! _.isInstanceOf[CommentInter])
+        whatever match {
+          case Some(LabelInter(label2)) if label2 == label => Nil
+          case _ => List(zipper.item)
+        }
+      }
+      case item => List(item)
+    }
+  }
+
+  val optimizations = List(
+    removeConsecutiveReturnStatements,
+    removeJumpsToImmediateLabels)
 
   def optimize(list: List[IntermediateInstruction]): List[IntermediateInstruction] = {
     optimizations.foldLeft(list) ((currentList, function) => {
