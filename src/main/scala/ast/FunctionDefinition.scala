@@ -3,6 +3,7 @@ package ast
 import scala.scalajs.js.annotation.JSExport
 
 import assembler._
+import compiler.IntermediateKeyholeOptimizer
 
 @JSExport
 class FunctionDefinition(val name: String, params: List[(String, CType)], val vars: Map[String, Integer],
@@ -15,7 +16,8 @@ class FunctionDefinition(val name: String, params: List[(String, CType)], val va
   @JSExport
   // Style question: should this be def or val?
   def toIntermediate(): List[IntermediateInstruction] = {
-    CommentInter(s"$name function definition: ") +: body.flatMap(_.toIntermediate())
+    val intermediate = CommentInter(s"$name function definition: ") +: body.flatMap(_.toIntermediate())
+    IntermediateKeyholeOptimizer.optimize(intermediate)
   }
 
   val allExpressions: List[Expr] = body.map{_.allExpressions}.flatten
@@ -60,18 +62,6 @@ class FunctionDefinition(val name: String, params: List[(String, CType)], val va
     }
 
     dict.toMap
-  }
-
-  def toAssembly(globals: List[String]): List[Assembly] = {
-    val lol = vars.values.toList.asInstanceOf[List[Int]].sum
-    ASM_Label(name) +:
-      (for (block <- blocks) yield { new
-          BlockAssembler(block,
-            localsMap,
-            globals,
-            Some(returnPosition),
-            localVars.length - vars.size + lol)
-        .assemble() }).flatten :+ ASM_Return
   }
 
   def functionDependencies(): List[String] = {

@@ -4,10 +4,16 @@ package utils
  * Created by bshlegeris on 2/24/15.
  */
 object Util {
-  def mapWithContext[A, B](list: List[A], f: (A, List[A], List[A]) => B): List[B] = {
-    list.foldLeft((Nil, Nil, list)) ((resultSoFar, previousItems, nextItems), item) => {
-      resultSoFar :+ f(resultSoFar, previousItems, nextItems), 
-
+  def mapWithContext[A, B](list: List[A], f: Zipper[A] => List[B]): List[B] = {
+    list.foldLeft((List[B](), List[A](), list)) {
+      (tuple, item) => {
+        val (resultSoFar, previousItems, nextItems) = tuple
+        (resultSoFar ++ f(Zipper(item, previousItems, nextItems)),
+          item +: previousItems,
+          nextItems.drop(1))
+      }
     }._1
   }
 }
+
+case class Zipper[A](item: A, prev: List[A], next: List[A])
