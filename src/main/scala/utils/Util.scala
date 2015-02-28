@@ -8,7 +8,7 @@ object Util {
     list.foldLeft((List[B](), List[A](), list)) {
       (tuple, item) => {
         val (resultSoFar, previousItems, nextItems) = tuple
-        (resultSoFar ++ f(Zipper(item, previousItems, nextItems)),
+        (resultSoFar ++ f(Zipper(item, previousItems, nextItems.drop(1))),
           item +: previousItems,
           nextItems.drop(1))
       }

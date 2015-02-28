@@ -8,7 +8,8 @@ import ast._
  */
 case class Compiler(functions: List[FunctionDefinition]) {
   def toIntermediate(): List[IntermediateInstruction] = {
-    IntermediateKeyholeOptimizer.optimize(functions.flatMap(_.toIntermediate()))
+    Nil
+//    IntermediateKeyholeOptimizer.optimize(functions.flatMap(_.toIntermediate()))
   }
 
   def toAssembly(): List[Assembly] = {

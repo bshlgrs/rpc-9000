@@ -6,10 +6,6 @@ import assembler.{ASM_Jump, ASM_Return, Assembly}
 import ast._
 import utils._
 
-/**
- * Created by bshlegeris on 2/25/15.
- */
-
 object IntermediateKeyholeOptimizer {
 
 
@@ -29,10 +25,7 @@ object IntermediateKeyholeOptimizer {
   val removeJumpsToImmediateLabels : Optimization = (zipper) => {
     zipper.item match {
       case JumpInter(label) => {
-        val whatever = zipper.next.find(! _.isInstanceOf[CommentInter])
-        js.debugger()
-//        zipper.prev.find(! _.isInstanceOf[CommentInter])
-        whatever match {
+          zipper.next.find(! _.isInstanceOf[CommentInter]) match {
           case Some(LabelInter(label2)) if label2 == label => Nil
           case _ => List(zipper.item)
         }
