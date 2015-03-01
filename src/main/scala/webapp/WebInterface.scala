@@ -4,6 +4,7 @@ import scala.Any
 import scala.scalajs.js
 import scala.scalajs.js._
 import scala.scalajs.js.annotation.JSExport
+import scala.util.Try
 import compiler.Compiler
 import org.scalajs.jquery.{JQuery, jQuery}
 
@@ -20,12 +21,16 @@ object WebInterface extends JSApp {
   def handleClick(x: Any): Unit = {
     Counter.reset()
     val input = JsInterface.getBody()
-    val ast = JsInterface.parse(input).asInstanceOf[js.Array[js.Dictionary[Any]]]
-    jQuery("#ast-output").html(JsInterface.jsonTree(ast))
-    val compiler = Compiler(ast.toList.map(wrapFunctionDef))
-    jQuery("#intermediate-output").html(s"${compiler.toIntermediate().mkString("\n")}")
-    val text = s"<pre>${compiler.toAssembly().mkString("\n")}</pre>"
-    jQuery("#assembly-output").html(text)
+    for {
+      ast <- Try(JsInterface.parse(input).asInstanceOf[js.Array[js.Dictionary[Any]]])
+      compiler <- Try(Compiler(ast.toList.map(wrapFunctionDef)))
+      intermediate <- compiler.toIntermediate().map(_.mkString("\n"))
+      assembly <- compiler.toAssembly().map((x) => s"<pre>${x.mkString("\n")}</pre>")
+    } yield {
+      jQuery("#ast-output").html(JsInterface.jsonTree(ast))
+      jQuery("#intermediate-output").html(intermediate)
+      jQuery("#assembly-output").html(assembly)
+    }
   }
 
   @JSExport

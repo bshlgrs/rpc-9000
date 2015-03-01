@@ -2,9 +2,8 @@ package ast
 
 import scala.scalajs.js.annotation.JSExport
 
-//@JSExport
+
 sealed abstract class Statement {
-  @JSExport
   override def toString: String = this match {
     case Assignment(name, rhs) => name + " = " + rhs.toString + ";"
     case VoidFunctionCall(name, args) => name + "(" + args.mkString(", ") + ")"
@@ -23,7 +22,6 @@ sealed abstract class Statement {
       + " };")
   }
 
-  @JSExport
   def toIntermediate(): List[IntermediateInstruction]
 
   def allExpressions: List[Expr] =  this match {
@@ -44,7 +42,6 @@ sealed abstract class Statement {
   }
 }
 
-@JSExport
 case class Assignment(name: String, rhs: Expr) extends Statement {
   override def toIntermediate(): List[IntermediateInstruction] = {
     val (exprInters, resultPlace) = rhs.toIntermediate()
@@ -63,7 +60,6 @@ case class Assignment(name: String, rhs: Expr) extends Statement {
   }
 }
 
-@JSExport
 case class IndirectAssignment(lhs: Expr, rhs: Expr) extends Statement {
   override def toIntermediate(): List[IntermediateInstruction] = {
     val (lhsInstr, lhsVar) = lhs.toIntermediate()
@@ -73,7 +69,6 @@ case class IndirectAssignment(lhs: Expr, rhs: Expr) extends Statement {
   }
 }
 
-@JSExport
 case class IfElse(condition: BooleanExpr,
                   thenBlock: List[Statement],
                   elseBlock: List[Statement]) extends Statement {
@@ -98,7 +93,6 @@ case class IfElse(condition: BooleanExpr,
   }
 }
 
-@JSExport
 case class While(condition: BooleanExpr, block: List[Statement]) extends Statement {
   override def toIntermediate(): List[IntermediateInstruction] = {
     val counter = Counter.getCounter()
@@ -118,7 +112,6 @@ case class While(condition: BooleanExpr, block: List[Statement]) extends Stateme
   }
 }
 
-@JSExport
 case class Return(value: Option[Expr]) extends Statement {
   override def toIntermediate(): List[IntermediateInstruction] = value match {
     case None => {
@@ -131,7 +124,6 @@ case class Return(value: Option[Expr]) extends Statement {
   }
 }
 
-@JSExport
 case class VoidFunctionCall(name: String, args: List[Expr]) extends Statement {
   override def toIntermediate(): List[IntermediateInstruction] = {
     val arg_code = for( arg <- args ) yield arg.toIntermediate()
@@ -143,7 +135,6 @@ case class VoidFunctionCall(name: String, args: List[Expr]) extends Statement {
   }
 }
 
-@JSExport
 case class ForLoop(instr: Statement, cond: BooleanExpr, iterator: Statement,
                    block: List[Statement]) extends Statement {
   override def toIntermediate() = {
@@ -151,7 +142,6 @@ case class ForLoop(instr: Statement, cond: BooleanExpr, iterator: Statement,
   }
 }
 
-@JSExport
 case class ArrayAssignment(name: String, exprs: List[Expr]) extends Statement {
   override def toIntermediate(): List[IntermediateInstruction] = {
     if (exprs.length == 0) {
@@ -177,10 +167,6 @@ case class ArrayAssignment(name: String, exprs: List[Expr]) extends Statement {
 
 object StatementHelper {
   def statementsToIntermediate(block: List[Statement]): List[IntermediateInstruction] = {
-    var out = List[IntermediateInstruction]()
-    for(statement <- block) {
-      out = out ::: statement.toIntermediate()
-    }
-    out
+    block.flatMap(_.toIntermediate())
   }
 }

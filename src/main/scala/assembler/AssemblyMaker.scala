@@ -13,15 +13,26 @@ object AssemblyMaker {
     var currentList = List[IntermediateInstruction]()
     var labelName = "starting-block-" + Counter.getCounter().toString
 
+    var saving = true
+
     for(line <- instrs) {
       line match {
         case LabelInter(name) => {
+          saving = true
           output = output :+ new Block(labelName, currentList)
           labelName = name
           currentList = List()
         }
+        case ReturnVoidInter | JumpInter(_) | ReturnWithValInter(_) => {
+          if (saving) {
+            currentList = currentList :+ line
+            saving = false
+          }
+        }
         case _ => {
-          currentList = currentList :+ line
+          if (saving) {
+            currentList = currentList :+ line
+          }
         }
       }
     }

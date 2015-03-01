@@ -1,19 +1,20 @@
 package compiler
 
-import assembler.{ASM_Label, ASM_Return, BlockAssembler, Assembly}
+import scala.util.Try
+
+import assembler._
 import ast._
 
-/**
- * Created by bshlegeris on 2/20/15.
- */
+
 case class Compiler(functions: List[FunctionDefinition]) {
-  def toIntermediate(): List[IntermediateInstruction] = {
-    Nil
-//    IntermediateKeyholeOptimizer.optimize(functions.flatMap(_.toIntermediate()))
+  def toIntermediate(): Try[List[IntermediateInstruction]] = {
+    Try(IntermediateKeyholeOptimizer.optimize(functions.flatMap((function) => {
+        AssemblyMaker.separateIntoBlocks(function.toIntermediate()).flatMap(_.code)
+      })))
   }
 
-  def toAssembly(): List[Assembly] = {
-    functions.flatMap(compileFunctionToAssembly(_, Nil))
+  def toAssembly(): Try[List[Assembly]] = {
+    Try(functions.flatMap(compileFunctionToAssembly(_, Nil)))
   }
 
   def compileFunctionToAssembly(function: FunctionDefinition, globals: List[String]): List[Assembly] = {
@@ -29,7 +30,7 @@ case class Compiler(functions: List[FunctionDefinition]) {
 
     val optimizedMainBody = AssemblyKeyholeOptimizer.optimize(mainBody)
 
-    mainBody.last match {
+    optimizedMainBody.last match {
       case ASM_Return => ASM_Label(function.name) +: mainBody
       case _ => ASM_Label(function.name) +: mainBody :+ ASM_Return
     }

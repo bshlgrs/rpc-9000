@@ -162,8 +162,8 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
           // Pop return value from the stack.
           returnValue match {
             case None => emit(ASM_Pop(ZeroRegister))
-            case Some(name) => {
-              var r1 = getOutputRegister(name)
+            case Some(varName) => {
+              val r1 = getOutputRegister(varName)
               emit(ASM_Pop(r1))
             }
           }
@@ -185,7 +185,7 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
         }
         case PushInter => emit(ASM_Push(ZeroRegister))
         case PopInter(target) => {
-          var r = getOutputRegister(target)
+          val r = getOutputRegister(target)
           emit(ASM_Pop(r))
         }
         case CommentInter(comment) => emit(ASM_Comment(comment))
@@ -194,12 +194,18 @@ class BlockAssembler(block: Block, locals: Map[String, Int],
             returnPosition match {case Some(x) => x; case _ => throw new Exception("unimplemented")},
             StackPointer))
           emit(ASM_Return)
+
+          return code
         }
         case ReturnVoidInter => emit(ASM_Return)
       }
     }
 
-    saveUnsynchedVariables()
+    code.lastOption match {
+      case Some(ASM_Return) => ()
+      case Some(_) => saveUnsynchedVariables()
+      case None => ()
+    }
 
     code
   }

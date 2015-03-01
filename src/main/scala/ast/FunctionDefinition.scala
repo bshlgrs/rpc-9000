@@ -24,7 +24,7 @@ class FunctionDefinition(val name: String, params: List[(String, CType)], val va
 
   val strings: List[String] = allExpressions.map{_.strings}.flatten
 
-  val blocks: List[Block] = AssemblyMaker.separateIntoBlocks(toIntermediate())
+  val blocks: List[Block] = AssemblyMaker.separateIntoBlocks(IntermediateKeyholeOptimizer.optimize(toIntermediate()))
 
   val returnPosition = - params.length - 1
 
