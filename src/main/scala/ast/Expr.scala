@@ -1,11 +1,5 @@
 package ast
 
-import scala.scalajs.js.annotation.JSExport
-
-/**
- * Created by bshlegeris on 2/20/15.
- */
-@JSExport
 sealed abstract class Expr {
   override def toString: String = this match {
     case Lit(n) => n.toString
@@ -41,15 +35,26 @@ sealed abstract class Expr {
     case _ => false
   }
 
-  @JSExport
   def toIntermediate(): (List[IntermediateInstruction], VarOrLit) = this match {
     case Lit(n) => (Nil, VOLLit(n))
     case BinOp(op, e1, e2) => {
-      val (lhsInstr, lhsVar) = e1.toIntermediate()
-      val (rhsInstr, rhsVar) = e2.toIntermediate()
-      val out = Counter.getTempVarName()
-      (lhsInstr ::: rhsInstr ::: List(BinOpInter(op, lhsVar, rhsVar, out)),
-        VOLVar(out))
+      (op, e1, e2) match {
+        case (AddOp | SubOp, _, Lit(0)) => e1.toIntermediate()
+        case (AddOp, Lit(0), _) => e2.toIntermediate()
+        case (MulOp, _, Lit(0)) => Lit(0).toIntermediate()
+        case (MulOp, _, Lit(1)) => e1.toIntermediate()
+        case (MulOp, Lit(0), _) => Lit(0).toIntermediate()
+        case (MulOp, Lit(1), _) => e2.toIntermediate()
+        case (DivOp, _, Lit(0)) => throw new Error("what")
+        case _ => {
+          val (lhsInstr, lhsVar) = e1.toIntermediate()
+          val (rhsInstr, rhsVar) = e2.toIntermediate()
+          val out = Counter.getTempVarName()
+          (lhsInstr ::: rhsInstr ::: List(BinOpInter(op, lhsVar, rhsVar, out)),
+            VOLVar(out))
+        }
+      }
+
     }
     case Var(n) => (Nil, VOLVar(n))
     case Load(exp) => {

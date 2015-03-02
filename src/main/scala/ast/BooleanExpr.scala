@@ -2,6 +2,8 @@ package ast
 
 import scala.scalajs.js.annotation.JSExport
 
+import ast.BinOp
+
 @JSExport
 sealed abstract class BooleanExpr {
   override def toString: String = this match {
@@ -29,22 +31,20 @@ case class BooleanBinOp(op: BoolBinOperator, lhs: Expr, rhs: Expr) extends Boole
         BooleanBinOp(GreaterThan, BinOp(AddOp, Lit(1), lhs), rhs).toIntermediate(thenLabel, elseLabel)
       }
       case _ => {
-        val (lhsCode, lhsResult) = lhs.toIntermediate()
-        val (rhsCode, rhsResult) = rhs.toIntermediate()
-        val outputVar = Counter.getTempVarName()
+        op match {
+          case Equals => {
+            val (instrs, outputVar) = BinOp(SubOp, lhs, rhs).toIntermediate()
+            instrs ++ List(JumpNZInter(elseLabel, outputVar),
+              JumpInter(thenLabel))
+          }
 
-        val comparisonInstrs: List[IntermediateInstruction] = op match {
-          case Equals => List(BinOpInter(SubOp, lhsResult, rhsResult, outputVar),
-            JumpNZInter(elseLabel, VOLVar(outputVar)),
-            JumpInter(thenLabel))
-
-          case GreaterThan => List(BinOpInter(SubOp, rhsResult, lhsResult, outputVar),
-            JumpNInter(thenLabel, VOLVar(outputVar)),
-            JumpInter(elseLabel))
+          case GreaterThan => {
+            val (instrs, outputVar) = BinOp(SubOp, rhs, lhs).toIntermediate()
+            instrs ++ List(JumpNInter(thenLabel, outputVar),
+              JumpInter(elseLabel))
+          }
           case GreaterOrEqual => throw new Exception("something is hideously wrong")
         }
-
-        lhsCode ::: rhsCode ::: comparisonInstrs
       }
     }
   }

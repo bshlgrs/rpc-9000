@@ -39,5 +39,6 @@ Here's some stuff I want to add:
 - `Counter.scala` is really inelegant and should be replaced.
 - A type system. This would be useful for type checking, but eventually would also allow things like arrays of structs or arrays of arrays.
 - A function to go over the generated assembly and make obvious keyhole optimizations. For example, generated code frequently has pieces of assembly like multiple consecutive return instructions or jump instructions right before label instructions.
+    - fixed!
 - Various special case optimizations like rewriting `x - 0` to `x`. This should probably happen in the AST section of the code.
 - Error handling! Currently you just get errors in the Javascript console when you have a parse error or a name error or whatever. This should be improved.
